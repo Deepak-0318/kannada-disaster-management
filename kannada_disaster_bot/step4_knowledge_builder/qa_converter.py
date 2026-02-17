@@ -7,7 +7,8 @@ ROOT_DATASET = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", ".
 INPUT_FILES = [
     os.path.join(ROOT_DATASET, "kannada_disaster_qa.jsonl"),
     os.path.join(ROOT_DATASET, "kannada_disaster_qa.json"),
-    os.path.join(ROOT_DATASET, "kannada_disaster_alpaca.json")
+    os.path.join(ROOT_DATASET, "kannada_disaster_alpaca.json"),
+    os.path.join(ROOT_DATASET, "kannada_disaster_7000.json")
 ]
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "knowledge_base.json")
 
