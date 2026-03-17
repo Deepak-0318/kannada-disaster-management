@@ -1,0 +1,779 @@
+[
+    {
+        "doc_id": 1,
+        "content": "Q: ಪ್ರಾಕೃತಿಕ ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಯಾವ ಹೆಲ್ಪ್‌ಲೈನ್ ಸಂಖ್ಯೆಗೆ ಕರೆ ಮಾಡಬೇಕು?\nA: ಪ್ರಾಕೃತಿಕ ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ 1077 ಈ ತುರ್ತು ಸಹಾಯವಾಣಿಗೆ ಕರೆ ಮಾಡಿ. ಇದು ಕರ್ನಾಟಕ ರಾಜ್ಯ ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಪ್ರಾಧಿಕಾರದ (KSDMA) ಉಚಿತ ಸಹಾಯವಾಣಿ. 24/7 ಲಭ್ಯವಿದೆ.",
+        "disaster_type": "general",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 2,
+        "content": "Q: What is the disaster helpline number in Karnataka?\nA: During a natural disaster in Karnataka, call 1077, the toll-free Disaster Helpline of Karnataka State Disaster Management Authority (KSDMA). It is available 24/7.",
+        "disaster_type": "general",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 3,
+        "content": "Q: ಕರ್ನಾಟಕದಲ್ಲಿ ತುರ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು ಯಾವುವು?\nA: ಕರ್ನಾಟಕದಲ್ಲಿ ಪ್ರಮುಖ ತುರ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು: ಪೊಲೀಸ್ - 100, ಅಗ್ನಿಶಾಮಕ ದಳ - 101, ಆಂಬುಲೆನ್ಸ್ - 102/108, ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಹೆಲ್ಪ್‌ಲೈನ್ - 1077, ರಾಜ್ಯ ತುರ್ತು ಕಾರ್ಯಾಚರಣೆ ಕೇಂದ್ರ - 1070, ತುರ್ತು ಸಹಾಯವಾಣಿ - 112, ಮಹಿಳಾ ಹೆಲ್ಪ್‌ಲೈನ್ - 1091, ಮಕ್ಕಳ ಹೆಲ್ಪ್‌ಲೈನ್ - 1098.",
+        "disaster_type": "emergency_numbers",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 4,
+        "content": "Q: What are the emergency helpline numbers in Karnataka?\nA: Key emergency helpline numbers in Karnataka: Police - 100, Fire Department - 101, Ambulance - 102/108, Disaster Management Helpline - 1077, State Emergency Operation Centre - 1070, Emergency Number - 112, Women Helpline - 1091, Child Helpline - 1098.",
+        "disaster_type": "emergency_numbers",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 5,
+        "content": "Q: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ತಕ್ಷಣ ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ, 2) ವಿದ್ಯುತ್ ಮತ್ತು ಗ್ಯಾಸ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಿ, 3) ಶುದ್ಧ ನೀರು ಮತ್ತು ಒಣ ಆಹಾರವನ್ನು ಸೇವಿಸಿ, 4) ರೇಡಿಯೋ ಅಥವಾ ಟಿವಿ ಮೂಲಕ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಅನುಸರಿಸಿ, 5) 1077 ಗೆ ಕರೆ ಮಾಡಿ ಸಹಾಯ ಕೋರಿ, 6) ಪ್ರವಾಹ ನೀರಿನಲ್ಲಿ ನಡೆಯದಿರಿ ಅಥವಾ ವಾಹನ ಚಲಾಯಿಸದಿರಿ.",
+        "disaster_type": "flood",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 6,
+        "content": "Q: What should I do during a flood?\nA: Actions to take during a flood: 1) Move to higher ground immediately, 2) Turn off electricity and gas connections, 3) Drink clean water and eat dry food, 4) Follow updates on radio or TV, 5) Call 1077 for help, 6) Do not walk or drive through flood water.",
+        "disaster_type": "flood",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 7,
+        "content": "Q: ಪ್ರವಾಹದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು ಯಾವುವು?\nA: ಪ್ರವಾಹದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು: 1) ಮಳೆಗಾಲದ ಮೊದಲೇ ಅಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಿ, 2) ಮುಖ್ಯ ದಾಖಲೆಗಳನ್ನು ನೀರಿನಿರೋಧಕ ಪ್ಯಾಕ್‌ನಲ್ಲಿ ಸಂರಕ್ಷಿಸಿ, 3) ವಿದ್ಯುತ್ ಸಾಧನಗಳನ್ನು ಎತ್ತರದ ಸ್ಥಳದಲ್ಲಿರಿಸಿ, 4) ಔಷಧಿಗಳು ಮತ್ತು ಪ್ರಥಮ ಚಿಕಿತ್ಸಾ ಕಿಟ್ ಸಿದ್ಧವಾಗಿಡಿ, 5) ರೇಡಿಯೋ/ಟಿವಿ ಮೂಲಕ ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಿರಿ.",
+        "disaster_type": "flood",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 8,
+        "content": "Q: ಭೂಕಂಪದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕಂಪದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಶಾಂತವಾಗಿರಿ, 2) ಮೇಜು ಅಥವಾ ಬಲವಾದ ವಸ್ತುವಿನ ಕೆಳಗೆ ಅಡಗಿರಿ (Drop, Cover, Hold), 3) ಕಿಟಕಿ, ಕನ್ನಡಿ, ಗೋಡೆಗಳಿಂದ ದೂರವಿರಿ, 4) ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ, 5) ಹೊರಗೆ ಇದ್ದರೆ ಮರಗಳು, ಕಟ್ಟಡಗಳಿಂದ ದೂರವಿರಿ, 6) ಓಡಬೇಡಿ, 7) ಕುರುಚಲು ಗಾಳದಲ್ಲಿ ನಿಲ್ಲಬೇಡಿ.",
+        "disaster_type": "earthquake",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 9,
+        "content": "Q: What should I do during an earthquake?\nA: Actions to take during an earthquake: 1) Stay calm, 2) Drop, Cover, and Hold under a sturdy object, 3) Stay away from windows, mirrors, and walls, 4) Do not use elevators, 5) If outside, stay away from buildings and trees, 6) Do not run, 7) Do not stand in doorways.",
+        "disaster_type": "earthquake",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 10,
+        "content": "Q: ಭೂಕಂಪದ ನಂತರ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕಂಪದ ನಂತರ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಆಘಾತಗಳಿಗೆ ಸಿದ್ಧರಿರಿ, 2) ಗಾಯಗೊಂಡವರಿಗೆ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ನೀಡಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಪಡೆಯಿರಿ, 4) ವಿದ್ಯುತ್, ಗ್ಯಾಸ್ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ, 5) ಕಟ್ಟಡದ ಹಾನಿ ಪರಿಶೀಲಿಸಿ, 6) ಅಧಿಕೃತ ಮಾಹಿತಿಯನ್ನು ಅನುಸರಿಸಿ.",
+        "disaster_type": "earthquake",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 11,
+        "content": "Q: ಚಂಡಮಾರುತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಚಂಡಮಾರುತದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಭದ್ರವಾದ ಕಟ್ಟಡದಲ್ಲಿ ಇರಿ, 2) ಕಿಟಕಿ, ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿರಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಅನುಸರಿಸಿ, 4) ಅಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಿ, 5) ಭದ್ರತಾ ದಳಗಳ ಸೂಚನೆಯನ್ನು ಅನುಸರಿಸಿ, 6) ಹೊರಗೆ ಹೋಗಬೇಡಿ, 7) ವಿದ್ಯುತ್ ಸಾಧನಗಳಿಂದ ದೂರವಿರಿ.",
+        "disaster_type": "cyclone",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 12,
+        "content": "Q: What should I do during a cyclone?\nA: Actions to take during a cyclone: 1) Stay in a sturdy building, 2) Close windows and doors, 3) Follow updates on radio, 4) Keep emergency supplies ready, 5) Follow instructions from authorities, 6) Do not go outside, 7) Stay away from electrical appliances.",
+        "disaster_type": "cyclone",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 13,
+        "content": "Q: ಚಂಡಮಾರುತಕ್ಕೆ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು ಯಾವುವು?\nA: ಚಂಡಮಾರುತದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು: 1) ಹವಾಮಾನ ಮುನ್ನೆಚ್ಚರಿಕೆಗಳನ್ನು ಅನುಸರಿಸಿ, 2) ಅಗತ್ಯ ವಸ್ತುಗಳ ಸಂಗ್ರಹ ಮಾಡಿ, 3) ಕಿಟಕಿಗಳಿಗೆ ತಡೆಗಟ್ಟುಗಳನ್ನು ಹಾಕಿ, 4) ಹೊರಾಂಗಣ ವಸ್ತುಗಳನ್ನು ಒಳಗೆ ತೆಗೆದುಕೊಳ್ಳಿ, 5) ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಲು ಸಿದ್ಧರಿರಿ, 6) ಸುರಕ್ಷಿತ ಸ್ಥಳಕ್ಕೆ ತೆರಳಲು ಯೋಜನೆ ಮಾಡಿ.",
+        "disaster_type": "cyclone",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 14,
+        "content": "Q: ಬೆಂಕಿ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬೆಂಕಿ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) 101 ಗೆ ತಕ್ಷಣ ಕರೆ ಮಾಡಿ, 2) ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಿ, 3) ತಡೆರಹಿತ ಹಾದಿಯಲ್ಲಿ ಹೊರಹೋಗಿ, 4) ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ, 5) ಶ್ವಾಸಕವಚವನ್ನು ಬಳಸಿ ಹೊರಹೋಗಿ, 6) ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿ ಬೆಂಕಿಯನ್ನು ನಿಧಾನಗೊಳಿಸಿ, 7) ನೀರಿನಿಂದ ಎಣ್ಣೆ ಬೆಂಕಿ ನಂದಿಸಬೇಡಿ.",
+        "disaster_type": "fire",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 15,
+        "content": "Q: What should I do during a fire emergency?\nA: Actions to take during a fire emergency: 1) Call 101 immediately, 2) Turn off electricity, 3) Evacuate through clear pathways, 4) Do not use elevators, 5) Use mask while evacuating, 6) Close doors to slow fire spread, 7) Do not use water on oil fires.",
+        "disaster_type": "fire",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 16,
+        "content": "Q: ನಾನು flood ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ, ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ (move to higher ground) ಮತ್ತು 1077 ಗೆ ಕರೆ ಮಾಡಿ. Stay away from flood water.",
+        "disaster_type": "flood",
+        "language": "bilingual",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 17,
+        "content": "Q: What is the number for ವಿಪತ್ತು ನಿರ್ವಹಣಾ helpline?\nA: The Karnataka Disaster Management Helpline number is 1077. It is toll-free and available 24/7.",
+        "disaster_type": "general",
+        "language": "bilingual",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 18,
+        "content": "Q: ಭೂಕುಸಿತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕುಸಿತದ ಸಮಯದಲ್ಲಿ: 1) ತಕ್ಷಣ ಆ ಪ್ರದೇಶದಿಂದ ಹೊರಹೋಗಿ, 2) ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ, 3) 1077 ಗೆ ಕರೆ ಮಾಡಿ, 4) ಮಳೆ ನೀರಿನ ಹರಿವಿನಿಂದ ದೂರವಿರಿ, 5) ಭೂಕುಸಿತದ ಶಬ್ದ ಕೇಳಿದರೆ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ.",
+        "disaster_type": "landslide",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 19,
+        "content": "Q: What should I do during a landslide?\nA: During a landslide: 1) Evacuate the area immediately, 2) Move to higher ground, 3) Call 1077, 4) Stay away from rainwater flow paths, 5) Be alert for sounds of moving debris.",
+        "disaster_type": "landslide",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 20,
+        "content": "Q: ಬಿಸಿಲಿನ ತಾಪದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬಿಸಿಲಿನ ತಾಪದ ಸಮಯದಲ್ಲಿ: 1) ಹೆಚ್ಚು ನೀರು ಕುಡಿಯಿರಿ, 2) ಮಧ್ಯಾಹ್ನ 11-3ರವರೆಗೆ ಹೊರಗೆ ಹೋಗದಿರಿ, 3) ತಂಪಾದ ವಸ್ತ್ರಗಳನ್ನು ಧರಿಸಿ, 4) ORS ದ್ರಾವಣವನ್ನು ಕುಡಿಯಿರಿ, 5) ತಲೆ ಮುಚ್ಚಿಕೊಳ್ಳಿ, 6) ತಂಪಾದ ಸ್ಥಳದಲ್ಲಿ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ.",
+        "disaster_type": "heatwave",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 21,
+        "content": "Q: What should I do during a heatwave?\nA: During a heatwave: 1) Drink plenty of water, 2) Avoid going outside between 11 AM - 3 PM, 3) Wear light-colored clothing, 4) Drink ORS solution, 5) Cover your head, 6) Rest in cool places.",
+        "disaster_type": "heatwave",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 22,
+        "content": "Q: ಮಿಂಚು ಹೊಡೆಯುವ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಮಿಂಚು ಹೊಡೆಯುವ ಸಮಯದಲ್ಲಿ: 1) ಮರಗಳು, ಉನ್ನತ ವಸ್ತುಗಳಿಂದ ದೂರವಿರಿ, 2) ಒಳಗೆ ಇರಿ, 3) ವಿದ್ಯುತ್ ಸಾಧನಗಳನ್ನು ಬಳಸಬೇಡಿ, 4) ನೀರಿನಿಂದ ದೂರವಿರಿ, 5) ಕಾರಿನೊಳಗೆ ಇದ್ದರೆ ಸುರಕ್ಷಿತವಾಗಿದೆ.",
+        "disaster_type": "lightning",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 23,
+        "content": "Q: What should I do during lightning?\nA: During lightning: 1) Stay away from trees and tall objects, 2) Stay indoors, 3) Do not use electrical appliances, 4) Stay away from water, 5) If in a car, you are safe.",
+        "disaster_type": "lightning",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 24,
+        "content": "Q: ಬರಗಾಲದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬರಗಾಲದ ಸಮಯದಲ್ಲಿ: 1) ನೀರನ್ನು ಉಳಿಸಿ ಬಳಸಿ, 2) ಕಡಿಮೆ ನೀರಿನಲ್ಲಿ ಬೆಳೆಯುವ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಯಿರಿ, 3) rainwater harvesting ಮಾಡಿ, 4) ಸರ್ಕಾರದ ಸಹಾಯವಾಣಿಗೆ ಸಂಪರ್ಕಿಸಿ, 5) ಪಶುಗಳಿಗೆ ತ್ಯಾಜ್ಯ ನೀರನ್ನು ಬಳಸಬೇಡಿ.",
+        "disaster_type": "drought",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 25,
+        "content": "Q: What should I do during a drought?\nA: During a drought: 1) Conserve and reuse water, 2) Grow crops that require less water, 3) Practice rainwater harvesting, 4) Contact government helpline, 5) Do not give waste water to animals.",
+        "disaster_type": "drought",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 26,
+        "content": "Q: ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ಏನು ನೀಡಬೇಕು?\nA: ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ: 1) ಗಾಯವನ್ನು ಶುದ್ಧ ನೀರಿನಿಂದ ತೊಳೆಯಿರಿ, 2) ರಕ್ತಸ್ರಾವವಿದ್ದರೆ ಒತ್ತಡ ಹಾಕಿ, 3) ಶಾಕ್‌ಗೆ ಬಲಿಪಡುವವರನ್ನು ಮಲಗಿಸಿ, 4) 108 ಗೆ ಕರೆ ಮಾಡಿ, 5) ಗಾಯದ ಗಂಭೀರತೆ ಪರಿಶೀಲಿಸಿ.",
+        "disaster_type": "first_aid",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 27,
+        "content": "Q: What first aid should I give during a disaster?\nA: First aid during disaster: 1) Clean wounds with clean water, 2) Apply pressure for bleeding, 3) Lay down shock victims, 4) Call 108, 5) Assess severity of injuries.",
+        "disaster_type": "first_aid",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 28,
+        "content": "Q: ನಿರ್ಗಮನದ ಸಮಯದಲ್ಲಿ ಏನು ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?\nA: ನಿರ್ಗಮನದ ಸಮಯದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ವಸ್ತುಗಳು: 1) ಮುಖ್ಯ ದಾಖಲೆಗಳು (ಆಧಾರ್, ರೇಷನ್ ಕಾರ್ಡ್), 2) ಔಷಧಿಗಳು, 3) ನೀರು ಮತ್ತು ಆಹಾರ, 4) ಟಾರ್ಚ್ ಮತ್ತು ಬ್ಯಾಟರಿಗಳು, 5) ಒಣ ಬಟ್ಟೆಗಳು, 6) ನಗದು ಮತ್ತು ಆಭರಣಗಳು.",
+        "disaster_type": "evacuation",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 29,
+        "content": "Q: What should I carry during evacuation?\nA: Items to carry during evacuation: 1) Important documents (Aadhaar, ration card), 2) Medicines, 3) Water and food, 4) Torch and batteries, 5) Dry clothes, 6) Cash and jewelry.",
+        "disaster_type": "evacuation",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 30,
+        "content": "Q: ತುರ್ತು ಕಿಟ್‌ನಲ್ಲಿ ಏನೆಲ್ಲಾ ಇರಬೇಕು?\nA: ತುರ್ತು ಕಿಟ್‌ನಲ್ಲಿ ಇರಬೇಕಾದ ವಸ್ತುಗಳು: 1) ನೀರು (3 ದಿನಗಳಿಗೆ), 2) ಒಣ ಆಹಾರ, 3) ಟಾರ್ಚ್ ಮತ್ತು ಬ್ಯಾಟರಿಗಳು, 4) ಪ್ರಥಮ ಚಿಕಿತ್ಸಾ ಕಿಟ್, 5) ಮುಖ್ಯ ದಾಖಲೆಗಳ ನಕಲು, 6) whistle, 7) ಮೊಬೈಲ್ ಚಾರ್ಜರ್.",
+        "disaster_type": "emergency_kit",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 31,
+        "content": "Q: What should be in an emergency kit?\nA: Items for emergency kit: 1) Water (for 3 days), 2) Dry food, 3) Torch and batteries, 4) First aid kit, 5) Copies of important documents, 6) Whistle, 7) Mobile charger.",
+        "disaster_type": "emergency_kit",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 32,
+        "content": "Q: ಸುನಾಮಿ ಎಚ್ಚರಿಕೆ ಬಂದರೆ ಏನು ಮಾಡಬೇಕು?\nA: ಸುನಾಮಿ ಎಚ್ಚರಿಕೆ ಬಂದರೆ: 1) ತಕ್ಷಣ ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ಓಡಿ, 2) ಕಡಲತೀರದಿಂದ ಕನಿಷ್ಠ 2 ಕಿಮೀ ದೂರವಿರಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಪಡೆಯಿರಿ, 4) ಎಚ್ಚರಿಕೆ ರದ್ದಾಗುವವರೆಗೆ ಕಾಯಿರಿ, 5) 1077 ಗೆ ಕರೆ ಮಾಡಿ.",
+        "disaster_type": "tsunami",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 33,
+        "content": "Q: What should I do when a tsunami warning is issued?\nA: When tsunami warning is issued: 1) Run to higher ground immediately, 2) Stay at least 2 km away from coast, 3) Get information from radio, 4) Wait until warning is cancelled, 5) Call 1077.",
+        "disaster_type": "tsunami",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 34,
+        "content": "Q: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ಸಮಯದಲ್ಲಿ: 1) ಮುಖಕವಚ ಧರಿಸಿ, 2) ಸಾಮಾಜಿಕ ಅಂತರ ಕಾಪಾಡಿಕೊಳ್ಳಿ, 3) ಕೈಗಳನ್ನು часто ತೊಳೆಯಿರಿ, 4) ಜನಸಂದಣಿಯಿಂದ ದೂರವಿರಿ, 5) ಲಸಿಕೆ ಹಾಕಿಸಿಕೊಳ್ಳಿ, 6) ರೋಗಲಕ್ಷಣಗಳಿದ್ದರೆ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+        "disaster_type": "pandemic",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 35,
+        "content": "Q: What should I do during a pandemic?\nA: During a pandemic: 1) Wear face masks, 2) Maintain social distance, 3) Wash hands frequently, 4) Avoid crowds, 5) Get vaccinated, 6) Contact doctor if symptoms appear.",
+        "disaster_type": "pandemic",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 36,
+        "content": "Q: ರಸಾಯನಿಕ ದುರಂತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ರಸಾಯನಿಕ ದುರಂತದ ಸಮಯದಲ್ಲಿ: 1) ತಕ್ಷಣ ಆ ಪ್ರದೇಶದಿಂದ ಹೊರಹೋಗಿ, 2) ಗಾಳಿಯ ದಿಕ್ಕಿಗೆ ವಿರುದ್ಧ ದಿಕ್ಕಿನಲ್ಲಿ ಹೋಗಿ, 3) 108 ಗೆ ಕರೆ ಮಾಡಿ, 4) ಶ್ವಾಸಕವಚ ಧರಿಸಿ, 5) ತ್ವರಿತವಾಗಿ ಸ್ನಾನ ಮಾಡಿ, 6) ಬಾಯಿಯಿಂದ ಉಸಿರಾಡಬೇಡಿ.",
+        "disaster_type": "chemical",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 37,
+        "content": "Q: What should I do during a chemical emergency?\nA: During a chemical emergency: 1) Evacuate the area immediately, 2) Move upwind from the source, 3) Call 108, 4) Wear a mask, 5) Take quick shower, 6) Do not breathe through mouth.",
+        "disaster_type": "chemical",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 38,
+        "content": "Q: ಪ್ರಾಕೃತಿಕ ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಯಾವ ಹೆಲ್ಪ್‌ಲೈನ್ ಸಂಖ್ಯೆಗೆ ಕರೆ ಮಾಡಬೇಕು?\nA: ಪ್ರಾಕೃತಿಕ ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ 1077 ಈ ತುರ್ತು ಸಹಾಯವಾಣಿಗೆ ಕರೆ ಮಾಡಿ. ಇದು ಕರ್ನಾಟಕ ರಾಜ್ಯ ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಪ್ರಾಧಿಕಾರದ (KSDMA) ಉಚಿತ ಸಹಾಯವಾಣಿ. 24/7 ಲಭ್ಯವಿದೆ.",
+        "disaster_type": "general",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 39,
+        "content": "Q: What is the disaster helpline number in Karnataka?\nA: During a natural disaster in Karnataka, call 1077, the toll-free Disaster Helpline of Karnataka State Disaster Management Authority (KSDMA). It is available 24/7.",
+        "disaster_type": "general",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 40,
+        "content": "Q: ಕರ್ನಾಟಕದಲ್ಲಿ ತುರ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು ಯಾವುವು?\nA: ಕರ್ನಾಟಕದಲ್ಲಿ ಪ್ರಮುಖ ತುರ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು: ಪೊಲೀಸ್ - 100, ಅಗ್ನಿಶಾಮಕ ದಳ - 101, ಆಂಬುಲೆನ್ಸ್ - 102/108, ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಹೆಲ್ಪ್‌ಲೈನ್ - 1077, ರಾಜ್ಯ ತುರ್ತು ಕಾರ್ಯಾಚರಣೆ ಕೇಂದ್ರ - 1070, ತುರ್ತು ಸಹಾಯವಾಣಿ - 112, ಮಹಿಳಾ ಹೆಲ್ಪ್‌ಲೈನ್ - 1091, ಮಕ್ಕಳ ಹೆಲ್ಪ್‌ಲೈನ್ - 1098.",
+        "disaster_type": "emergency_numbers",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 41,
+        "content": "Q: What are the emergency helpline numbers in Karnataka?\nA: Key emergency helpline numbers in Karnataka: Police - 100, Fire Department - 101, Ambulance - 102/108, Disaster Management Helpline - 1077, State Emergency Operation Centre - 1070, Emergency Number - 112, Women Helpline - 1091, Child Helpline - 1098.",
+        "disaster_type": "emergency_numbers",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 42,
+        "content": "Q: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ತಕ್ಷಣ ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ, 2) ವಿದ್ಯುತ್ ಮತ್ತು ಗ್ಯಾಸ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಿ, 3) ಶುದ್ಧ ನೀರು ಮತ್ತು ಒಣ ಆಹಾರವನ್ನು ಸೇವಿಸಿ, 4) ರೇಡಿಯೋ ಅಥವಾ ಟಿವಿ ಮೂಲಕ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಅನುಸರಿಸಿ, 5) 1077 ಗೆ ಕರೆ ಮಾಡಿ ಸಹಾಯ ಕೋರಿ, 6) ಪ್ರವಾಹ ನೀರಿನಲ್ಲಿ ನಡೆಯದಿರಿ ಅಥವಾ ವಾಹನ ಚಲಾಯಿಸದಿರಿ.",
+        "disaster_type": "flood",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 43,
+        "content": "Q: What should I do during a flood?\nA: Actions to take during a flood: 1) Move to higher ground immediately, 2) Turn off electricity and gas connections, 3) Drink clean water and eat dry food, 4) Follow updates on radio or TV, 5) Call 1077 for help, 6) Do not walk or drive through flood water.",
+        "disaster_type": "flood",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 44,
+        "content": "Q: ಪ್ರವಾಹದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು ಯಾವುವು?\nA: ಪ್ರವಾಹದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು: 1) ಮಳೆಗಾಲದ ಮೊದಲೇ ಅಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಿ, 2) ಮುಖ್ಯ ದಾಖಲೆಗಳನ್ನು ನೀರಿನಿರೋಧಕ ಪ್ಯಾಕ್‌ನಲ್ಲಿ ಸಂರಕ್ಷಿಸಿ, 3) ವಿದ್ಯುತ್ ಸಾಧನಗಳನ್ನು ಎತ್ತರದ ಸ್ಥಳದಲ್ಲಿರಿಸಿ, 4) ಔಷಧಿಗಳು ಮತ್ತು ಪ್ರಥಮ ಚಿಕಿತ್ಸಾ ಕಿಟ್ ಸಿದ್ಧವಾಗಿಡಿ, 5) ರೇಡಿಯೋ/ಟಿವಿ ಮೂಲಕ ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಿರಿ.",
+        "disaster_type": "flood",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 45,
+        "content": "Q: ಭೂಕಂಪದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕಂಪದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಶಾಂತವಾಗಿರಿ, 2) ಮೇಜು ಅಥವಾ ಬಲವಾದ ವಸ್ತುವಿನ ಕೆಳಗೆ ಅಡಗಿರಿ (Drop, Cover, Hold), 3) ಕಿಟಕಿ, ಕನ್ನಡಿ, ಗೋಡೆಗಳಿಂದ ದೂರವಿರಿ, 4) ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ, 5) ಹೊರಗೆ ಇದ್ದರೆ ಮರಗಳು, ಕಟ್ಟಡಗಳಿಂದ ದೂರವಿರಿ, 6) ಓಡಬೇಡಿ, 7) ಕುರುಚಲು ಗಾಳದಲ್ಲಿ ನಿಲ್ಲಬೇಡಿ.",
+        "disaster_type": "earthquake",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 46,
+        "content": "Q: What should I do during an earthquake?\nA: Actions to take during an earthquake: 1) Stay calm, 2) Drop, Cover, and Hold under a sturdy object, 3) Stay away from windows, mirrors, and walls, 4) Do not use elevators, 5) If outside, stay away from buildings and trees, 6) Do not run, 7) Do not stand in doorways.",
+        "disaster_type": "earthquake",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 47,
+        "content": "Q: ಭೂಕಂಪದ ನಂತರ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕಂಪದ ನಂತರ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಆಘಾತಗಳಿಗೆ ಸಿದ್ಧರಿರಿ, 2) ಗಾಯಗೊಂಡವರಿಗೆ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ನೀಡಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಪಡೆಯಿರಿ, 4) ವಿದ್ಯುತ್, ಗ್ಯಾಸ್ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ, 5) ಕಟ್ಟಡದ ಹಾನಿ ಪರಿಶೀಲಿಸಿ, 6) ಅಧಿಕೃತ ಮಾಹಿತಿಯನ್ನು ಅನುಸರಿಸಿ.",
+        "disaster_type": "earthquake",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 48,
+        "content": "Q: ಚಂಡಮಾರುತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಚಂಡಮಾರುತದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಭದ್ರವಾದ ಕಟ್ಟಡದಲ್ಲಿ ಇರಿ, 2) ಕಿಟಕಿ, ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿರಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಅನುಸರಿಸಿ, 4) ಅಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಿ, 5) ಭದ್ರತಾ ದಳಗಳ ಸೂಚನೆಯನ್ನು ಅನುಸರಿಸಿ, 6) ಹೊರಗೆ ಹೋಗಬೇಡಿ, 7) ವಿದ್ಯುತ್ ಸಾಧನಗಳಿಂದ ದೂರವಿರಿ.",
+        "disaster_type": "cyclone",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 49,
+        "content": "Q: What should I do during a cyclone?\nA: Actions to take during a cyclone: 1) Stay in a sturdy building, 2) Close windows and doors, 3) Follow updates on radio, 4) Keep emergency supplies ready, 5) Follow instructions from authorities, 6) Do not go outside, 7) Stay away from electrical appliances.",
+        "disaster_type": "cyclone",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 50,
+        "content": "Q: ಚಂಡಮಾರುತಕ್ಕೆ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು ಯಾವುವು?\nA: ಚಂಡಮಾರುತದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು: 1) ಹವಾಮಾನ ಮುನ್ನೆಚ್ಚರಿಕೆಗಳನ್ನು ಅನುಸರಿಸಿ, 2) ಅಗತ್ಯ ವಸ್ತುಗಳ ಸಂಗ್ರಹ ಮಾಡಿ, 3) ಕಿಟಕಿಗಳಿಗೆ ತಡೆಗಟ್ಟುಗಳನ್ನು ಹಾಕಿ, 4) ಹೊರಾಂಗಣ ವಸ್ತುಗಳನ್ನು ಒಳಗೆ ತೆಗೆದುಕೊಳ್ಳಿ, 5) ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಲು ಸಿದ್ಧರಿರಿ, 6) ಸುರಕ್ಷಿತ ಸ್ಥಳಕ್ಕೆ ತೆರಳಲು ಯೋಜನೆ ಮಾಡಿ.",
+        "disaster_type": "cyclone",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 51,
+        "content": "Q: ಬೆಂಕಿ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬೆಂಕಿ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) 101 ಗೆ ತಕ್ಷಣ ಕರೆ ಮಾಡಿ, 2) ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಿ, 3) ತಡೆರಹಿತ ಹಾದಿಯಲ್ಲಿ ಹೊರಹೋಗಿ, 4) ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ, 5) ಶ್ವಾಸಕವಚವನ್ನು ಬಳಸಿ ಹೊರಹೋಗಿ, 6) ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿ ಬೆಂಕಿಯನ್ನು ನಿಧಾನಗೊಳಿಸಿ, 7) ನೀರಿನಿಂದ ಎಣ್ಣೆ ಬೆಂಕಿ ನಂದಿಸಬೇಡಿ.",
+        "disaster_type": "fire",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 52,
+        "content": "Q: What should I do during a fire emergency?\nA: Actions to take during a fire emergency: 1) Call 101 immediately, 2) Turn off electricity, 3) Evacuate through clear pathways, 4) Do not use elevators, 5) Use mask while evacuating, 6) Close doors to slow fire spread, 7) Do not use water on oil fires.",
+        "disaster_type": "fire",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 53,
+        "content": "Q: ನಾನು flood ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ, ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ (move to higher ground) ಮತ್ತು 1077 ಗೆ ಕರೆ ಮಾಡಿ. Stay away from flood water.",
+        "disaster_type": "flood",
+        "language": "bilingual",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 54,
+        "content": "Q: What is the number for ವಿಪತ್ತು ನಿರ್ವಹಣಾ helpline?\nA: The Karnataka Disaster Management Helpline number is 1077. It is toll-free and available 24/7.",
+        "disaster_type": "general",
+        "language": "bilingual",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 55,
+        "content": "Q: ಭೂಕುಸಿತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕುಸಿತದ ಸಮಯದಲ್ಲಿ: 1) ತಕ್ಷಣ ಆ ಪ್ರದೇಶದಿಂದ ಹೊರಹೋಗಿ, 2) ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ, 3) 1077 ಗೆ ಕರೆ ಮಾಡಿ, 4) ಮಳೆ ನೀರಿನ ಹರಿವಿನಿಂದ ದೂರವಿರಿ, 5) ಭೂಕುಸಿತದ ಶಬ್ದ ಕೇಳಿದರೆ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ.",
+        "disaster_type": "landslide",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 56,
+        "content": "Q: What should I do during a landslide?\nA: During a landslide: 1) Evacuate the area immediately, 2) Move to higher ground, 3) Call 1077, 4) Stay away from rainwater flow paths, 5) Be alert for sounds of moving debris.",
+        "disaster_type": "landslide",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 57,
+        "content": "Q: ಬಿಸಿಲಿನ ತಾಪದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬಿಸಿಲಿನ ತಾಪದ ಸಮಯದಲ್ಲಿ: 1) ಹೆಚ್ಚು ನೀರು ಕುಡಿಯಿರಿ, 2) ಮಧ್ಯಾಹ್ನ 11-3ರವರೆಗೆ ಹೊರಗೆ ಹೋಗದಿರಿ, 3) ತಂಪಾದ ವಸ್ತ್ರಗಳನ್ನು ಧರಿಸಿ, 4) ORS ದ್ರಾವಣವನ್ನು ಕುಡಿಯಿರಿ, 5) ತಲೆ ಮುಚ್ಚಿಕೊಳ್ಳಿ, 6) ತಂಪಾದ ಸ್ಥಳದಲ್ಲಿ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ.",
+        "disaster_type": "heatwave",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 58,
+        "content": "Q: What should I do during a heatwave?\nA: During a heatwave: 1) Drink plenty of water, 2) Avoid going outside between 11 AM - 3 PM, 3) Wear light-colored clothing, 4) Drink ORS solution, 5) Cover your head, 6) Rest in cool places.",
+        "disaster_type": "heatwave",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 59,
+        "content": "Q: ಮಿಂಚು ಹೊಡೆಯುವ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಮಿಂಚು ಹೊಡೆಯುವ ಸಮಯದಲ್ಲಿ: 1) ಮರಗಳು, ಉನ್ನತ ವಸ್ತುಗಳಿಂದ ದೂರವಿರಿ, 2) ಒಳಗೆ ಇರಿ, 3) ವಿದ್ಯುತ್ ಸಾಧನಗಳನ್ನು ಬಳಸಬೇಡಿ, 4) ನೀರಿನಿಂದ ದೂರವಿರಿ, 5) ಕಾರಿನೊಳಗೆ ಇದ್ದರೆ ಸುರಕ್ಷಿತವಾಗಿದೆ.",
+        "disaster_type": "lightning",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 60,
+        "content": "Q: What should I do during lightning?\nA: During lightning: 1) Stay away from trees and tall objects, 2) Stay indoors, 3) Do not use electrical appliances, 4) Stay away from water, 5) If in a car, you are safe.",
+        "disaster_type": "lightning",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 61,
+        "content": "Q: ಬರಗಾಲದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬರಗಾಲದ ಸಮಯದಲ್ಲಿ: 1) ನೀರನ್ನು ಉಳಿಸಿ ಬಳಸಿ, 2) ಕಡಿಮೆ ನೀರಿನಲ್ಲಿ ಬೆಳೆಯುವ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಯಿರಿ, 3) rainwater harvesting ಮಾಡಿ, 4) ಸರ್ಕಾರದ ಸಹಾಯವಾಣಿಗೆ ಸಂಪರ್ಕಿಸಿ, 5) ಪಶುಗಳಿಗೆ ತ್ಯಾಜ್ಯ ನೀರನ್ನು ಬಳಸಬೇಡಿ.",
+        "disaster_type": "drought",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 62,
+        "content": "Q: What should I do during a drought?\nA: During a drought: 1) Conserve and reuse water, 2) Grow crops that require less water, 3) Practice rainwater harvesting, 4) Contact government helpline, 5) Do not give waste water to animals.",
+        "disaster_type": "drought",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 63,
+        "content": "Q: ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ಏನು ನೀಡಬೇಕು?\nA: ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ: 1) ಗಾಯವನ್ನು ಶುದ್ಧ ನೀರಿನಿಂದ ತೊಳೆಯಿರಿ, 2) ರಕ್ತಸ್ರಾವವಿದ್ದರೆ ಒತ್ತಡ ಹಾಕಿ, 3) ಶಾಕ್‌ಗೆ ಬಲಿಪಡುವವರನ್ನು ಮಲಗಿಸಿ, 4) 108 ಗೆ ಕರೆ ಮಾಡಿ, 5) ಗಾಯದ ಗಂಭೀರತೆ ಪರಿಶೀಲಿಸಿ.",
+        "disaster_type": "first_aid",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 64,
+        "content": "Q: What first aid should I give during a disaster?\nA: First aid during disaster: 1) Clean wounds with clean water, 2) Apply pressure for bleeding, 3) Lay down shock victims, 4) Call 108, 5) Assess severity of injuries.",
+        "disaster_type": "first_aid",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 65,
+        "content": "Q: ನಿರ್ಗಮನದ ಸಮಯದಲ್ಲಿ ಏನು ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?\nA: ನಿರ್ಗಮನದ ಸಮಯದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ವಸ್ತುಗಳು: 1) ಮುಖ್ಯ ದಾಖಲೆಗಳು (ಆಧಾರ್, ರೇಷನ್ ಕಾರ್ಡ್), 2) ಔಷಧಿಗಳು, 3) ನೀರು ಮತ್ತು ಆಹಾರ, 4) ಟಾರ್ಚ್ ಮತ್ತು ಬ್ಯಾಟರಿಗಳು, 5) ಒಣ ಬಟ್ಟೆಗಳು, 6) ನಗದು ಮತ್ತು ಆಭರಣಗಳು.",
+        "disaster_type": "evacuation",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 66,
+        "content": "Q: What should I carry during evacuation?\nA: Items to carry during evacuation: 1) Important documents (Aadhaar, ration card), 2) Medicines, 3) Water and food, 4) Torch and batteries, 5) Dry clothes, 6) Cash and jewelry.",
+        "disaster_type": "evacuation",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 67,
+        "content": "Q: ತುರ್ತು ಕಿಟ್‌ನಲ್ಲಿ ಏನೆಲ್ಲಾ ಇರಬೇಕು?\nA: ತುರ್ತು ಕಿಟ್‌ನಲ್ಲಿ ಇರಬೇಕಾದ ವಸ್ತುಗಳು: 1) ನೀರು (3 ದಿನಗಳಿಗೆ), 2) ಒಣ ಆಹಾರ, 3) ಟಾರ್ಚ್ ಮತ್ತು ಬ್ಯಾಟರಿಗಳು, 4) ಪ್ರಥಮ ಚಿಕಿತ್ಸಾ ಕಿಟ್, 5) ಮುಖ್ಯ ದಾಖಲೆಗಳ ನಕಲು, 6) whistle, 7) ಮೊಬೈಲ್ ಚಾರ್ಜರ್.",
+        "disaster_type": "emergency_kit",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 68,
+        "content": "Q: What should be in an emergency kit?\nA: Items for emergency kit: 1) Water (for 3 days), 2) Dry food, 3) Torch and batteries, 4) First aid kit, 5) Copies of important documents, 6) Whistle, 7) Mobile charger.",
+        "disaster_type": "emergency_kit",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 69,
+        "content": "Q: ಸುನಾಮಿ ಎಚ್ಚರಿಕೆ ಬಂದರೆ ಏನು ಮಾಡಬೇಕು?\nA: ಸುನಾಮಿ ಎಚ್ಚರಿಕೆ ಬಂದರೆ: 1) ತಕ್ಷಣ ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ಓಡಿ, 2) ಕಡಲತೀರದಿಂದ ಕನಿಷ್ಠ 2 ಕಿಮೀ ದೂರವಿರಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಪಡೆಯಿರಿ, 4) ಎಚ್ಚರಿಕೆ ರದ್ದಾಗುವವರೆಗೆ ಕಾಯಿರಿ, 5) 1077 ಗೆ ಕರೆ ಮಾಡಿ.",
+        "disaster_type": "tsunami",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 70,
+        "content": "Q: What should I do when a tsunami warning is issued?\nA: When tsunami warning is issued: 1) Run to higher ground immediately, 2) Stay at least 2 km away from coast, 3) Get information from radio, 4) Wait until warning is cancelled, 5) Call 1077.",
+        "disaster_type": "tsunami",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 71,
+        "content": "Q: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ಸಮಯದಲ್ಲಿ: 1) ಮುಖಕವಚ ಧರಿಸಿ, 2) ಸಾಮಾಜಿಕ ಅಂತರ ಕಾಪಾಡಿಕೊಳ್ಳಿ, 3) ಕೈಗಳನ್ನು часто ತೊಳೆಯಿರಿ, 4) ಜನಸಂದಣಿಯಿಂದ ದೂರವಿರಿ, 5) ಲಸಿಕೆ ಹಾಕಿಸಿಕೊಳ್ಳಿ, 6) ರೋಗಲಕ್ಷಣಗಳಿದ್ದರೆ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+        "disaster_type": "pandemic",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 72,
+        "content": "Q: What should I do during a pandemic?\nA: During a pandemic: 1) Wear face masks, 2) Maintain social distance, 3) Wash hands frequently, 4) Avoid crowds, 5) Get vaccinated, 6) Contact doctor if symptoms appear.",
+        "disaster_type": "pandemic",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 73,
+        "content": "Q: ರಸಾಯನಿಕ ದುರಂತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ರಸಾಯನಿಕ ದುರಂತದ ಸಮಯದಲ್ಲಿ: 1) ತಕ್ಷಣ ಆ ಪ್ರದೇಶದಿಂದ ಹೊರಹೋಗಿ, 2) ಗಾಳಿಯ ದಿಕ್ಕಿಗೆ ವಿರುದ್ಧ ದಿಕ್ಕಿನಲ್ಲಿ ಹೋಗಿ, 3) 108 ಗೆ ಕರೆ ಮಾಡಿ, 4) ಶ್ವಾಸಕವಚ ಧರಿಸಿ, 5) ತ್ವರಿತವಾಗಿ ಸ್ನಾನ ಮಾಡಿ, 6) ಬಾಯಿಯಿಂದ ಉಸಿರಾಡಬೇಡಿ.",
+        "disaster_type": "chemical",
+        "language": "kannada",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 74,
+        "content": "Q: What should I do during a chemical emergency?\nA: During a chemical emergency: 1) Evacuate the area immediately, 2) Move upwind from the source, 3) Call 108, 4) Wear a mask, 5) Take quick shower, 6) Do not breathe through mouth.",
+        "disaster_type": "chemical",
+        "language": "english",
+        "source": "predefined"
+    },
+    {
+        "doc_id": 75,
+        "content": "Q: ಪ್ರಾಕೃತಿಕ ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಯಾವ ಹೆಲ್ಪ್‌ಲೈನ್ ಸಂಖ್ಯೆಗೆ ಕರೆ ಮಾಡಬೇಕು?\nA: ಪ್ರಾಕೃತಿಕ ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ 1077 ಈ ತುರ್ತು ಸಹಾಯವಾಣಿಗೆ ಕರೆ ಮಾಡಿ. ಇದು ಕರ್ನಾಟಕ ರಾಜ್ಯ ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಪ್ರಾಧಿಕಾರದ (KSDMA) ಉಚಿತ ಸಹಾಯವಾಣಿ. 24/7 ಲಭ್ಯವಿದೆ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 76,
+        "content": "Q: What is the disaster helpline number in Karnataka?\nA: During a natural disaster in Karnataka, call 1077, the toll-free Disaster Helpline of Karnataka State Disaster Management Authority (KSDMA). It is available 24/7.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 77,
+        "content": "Q: ಕರ್ನಾಟಕದಲ್ಲಿ ತುರ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು ಯಾವುವು?\nA: ಕರ್ನಾಟಕದಲ್ಲಿ ಪ್ರಮುಖ ತುರ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು: ಪೊಲೀಸ್ - 100, ಅಗ್ನಿಶಾಮಕ ದಳ - 101, ಆಂಬುಲೆನ್ಸ್ - 102/108, ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಹೆಲ್ಪ್‌ಲೈನ್ - 1077, ರಾಜ್ಯ ತುರ್ತು ಕಾರ್ಯಾಚರಣೆ ಕೇಂದ್ರ - 1070, ತುರ್ತು ಸಹಾಯವಾಣಿ - 112, ಮಹಿಳಾ ಹೆಲ್ಪ್‌ಲೈನ್ - 1091, ಮಕ್ಕಳ ಹೆಲ್ಪ್‌ಲೈನ್ - 1098.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 78,
+        "content": "Q: What are the emergency helpline numbers in Karnataka?\nA: Key emergency helpline numbers in Karnataka: Police - 100, Fire Department - 101, Ambulance - 102/108, Disaster Management Helpline - 1077, State Emergency Operation Centre - 1070, Emergency Number - 112, Women Helpline - 1091, Child Helpline - 1098.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 79,
+        "content": "Q: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ತಕ್ಷಣ ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ, 2) ವಿದ್ಯುತ್ ಮತ್ತು ಗ್ಯಾಸ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಿ, 3) ಶುದ್ಧ ನೀರು ಮತ್ತು ಒಣ ಆಹಾರವನ್ನು ಸೇವಿಸಿ, 4) ರೇಡಿಯೋ ಅಥವಾ ಟಿವಿ ಮೂಲಕ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಅನುಸರಿಸಿ, 5) 1077 ಗೆ ಕರೆ ಮಾಡಿ ಸಹಾಯ ಕೋರಿ, 6) ಪ್ರವಾಹ ನೀರಿನಲ್ಲಿ ನಡೆಯದಿರಿ ಅಥವಾ ವಾಹನ ಚಲಾಯಿಸದಿರಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 80,
+        "content": "Q: What should I do during a flood?\nA: Actions to take during a flood: 1) Move to higher ground immediately, 2) Turn off electricity and gas connections, 3) Drink clean water and eat dry food, 4) Follow updates on radio or TV, 5) Call 1077 for help, 6) Do not walk or drive through flood water.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 81,
+        "content": "Q: ಪ್ರವಾಹದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು ಯಾವುವು?\nA: ಪ್ರವಾಹದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು: 1) ಮಳೆಗಾಲದ ಮೊದಲೇ ಅಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಿ, 2) ಮುಖ್ಯ ದಾಖಲೆಗಳನ್ನು ನೀರಿನಿರೋಧಕ ಪ್ಯಾಕ್‌ನಲ್ಲಿ ಸಂರಕ್ಷಿಸಿ, 3) ವಿದ್ಯುತ್ ಸಾಧನಗಳನ್ನು ಎತ್ತರದ ಸ್ಥಳದಲ್ಲಿರಿಸಿ, 4) ಔಷಧಿಗಳು ಮತ್ತು ಪ್ರಥಮ ಚಿಕಿತ್ಸಾ ಕಿಟ್ ಸಿದ್ಧವಾಗಿಡಿ, 5) ರೇಡಿಯೋ/ಟಿವಿ ಮೂಲಕ ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಿರಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 82,
+        "content": "Q: ಭೂಕಂಪದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕಂಪದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಶಾಂತವಾಗಿರಿ, 2) ಮೇಜು ಅಥವಾ ಬಲವಾದ ವಸ್ತುವಿನ ಕೆಳಗೆ ಅಡಗಿರಿ (Drop, Cover, Hold), 3) ಕಿಟಕಿ, ಕನ್ನಡಿ, ಗೋಡೆಗಳಿಂದ ದೂರವಿರಿ, 4) ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ, 5) ಹೊರಗೆ ಇದ್ದರೆ ಮರಗಳು, ಕಟ್ಟಡಗಳಿಂದ ದೂರವಿರಿ, 6) ಓಡಬೇಡಿ, 7) ಕುರುಚಲು ಗಾಳದಲ್ಲಿ ನಿಲ್ಲಬೇಡಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 83,
+        "content": "Q: What should I do during an earthquake?\nA: Actions to take during an earthquake: 1) Stay calm, 2) Drop, Cover, and Hold under a sturdy object, 3) Stay away from windows, mirrors, and walls, 4) Do not use elevators, 5) If outside, stay away from buildings and trees, 6) Do not run, 7) Do not stand in doorways.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 84,
+        "content": "Q: ಭೂಕಂಪದ ನಂತರ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕಂಪದ ನಂತರ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಆಘಾತಗಳಿಗೆ ಸಿದ್ಧರಿರಿ, 2) ಗಾಯಗೊಂಡವರಿಗೆ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ನೀಡಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಪಡೆಯಿರಿ, 4) ವಿದ್ಯುತ್, ಗ್ಯಾಸ್ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ, 5) ಕಟ್ಟಡದ ಹಾನಿ ಪರಿಶೀಲಿಸಿ, 6) ಅಧಿಕೃತ ಮಾಹಿತಿಯನ್ನು ಅನುಸರಿಸಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 85,
+        "content": "Q: ಚಂಡಮಾರುತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಚಂಡಮಾರುತದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) ಭದ್ರವಾದ ಕಟ್ಟಡದಲ್ಲಿ ಇರಿ, 2) ಕಿಟಕಿ, ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿರಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಅನುಸರಿಸಿ, 4) ಅಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧವಾಗಿಡಿ, 5) ಭದ್ರತಾ ದಳಗಳ ಸೂಚನೆಯನ್ನು ಅನುಸರಿಸಿ, 6) ಹೊರಗೆ ಹೋಗಬೇಡಿ, 7) ವಿದ್ಯುತ್ ಸಾಧನಗಳಿಂದ ದೂರವಿರಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 86,
+        "content": "Q: What should I do during a cyclone?\nA: Actions to take during a cyclone: 1) Stay in a sturdy building, 2) Close windows and doors, 3) Follow updates on radio, 4) Keep emergency supplies ready, 5) Follow instructions from authorities, 6) Do not go outside, 7) Stay away from electrical appliances.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 87,
+        "content": "Q: ಚಂಡಮಾರುತಕ್ಕೆ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು ಯಾವುವು?\nA: ಚಂಡಮಾರುತದ ಮುನ್ನೆಚ್ಚರಿಕೆ ಕ್ರಮಗಳು: 1) ಹವಾಮಾನ ಮುನ್ನೆಚ್ಚರಿಕೆಗಳನ್ನು ಅನುಸರಿಸಿ, 2) ಅಗತ್ಯ ವಸ್ತುಗಳ ಸಂಗ್ರಹ ಮಾಡಿ, 3) ಕಿಟಕಿಗಳಿಗೆ ತಡೆಗಟ್ಟುಗಳನ್ನು ಹಾಕಿ, 4) ಹೊರಾಂಗಣ ವಸ್ತುಗಳನ್ನು ಒಳಗೆ ತೆಗೆದುಕೊಳ್ಳಿ, 5) ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಲು ಸಿದ್ಧರಿರಿ, 6) ಸುರಕ್ಷಿತ ಸ್ಥಳಕ್ಕೆ ತೆರಳಲು ಯೋಜನೆ ಮಾಡಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 88,
+        "content": "Q: ಬೆಂಕಿ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬೆಂಕಿ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ಕೈಗೊಳ್ಳಬೇಕಾದ ಕ್ರಮಗಳು: 1) 101 ಗೆ ತಕ್ಷಣ ಕರೆ ಮಾಡಿ, 2) ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ವಿಚ್ಛಿನ್ನಗೊಳಿಸಿ, 3) ತಡೆರಹಿತ ಹಾದಿಯಲ್ಲಿ ಹೊರಹೋಗಿ, 4) ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ, 5) ಶ್ವಾಸಕವಚವನ್ನು ಬಳಸಿ ಹೊರಹೋಗಿ, 6) ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿ ಬೆಂಕಿಯನ್ನು ನಿಧಾನಗೊಳಿಸಿ, 7) ನೀರಿನಿಂದ ಎಣ್ಣೆ ಬೆಂಕಿ ನಂದಿಸಬೇಡಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 89,
+        "content": "Q: What should I do during a fire emergency?\nA: Actions to take during a fire emergency: 1) Call 101 immediately, 2) Turn off electricity, 3) Evacuate through clear pathways, 4) Do not use elevators, 5) Use mask while evacuating, 6) Close doors to slow fire spread, 7) Do not use water on oil fires.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 90,
+        "content": "Q: ನಾನು flood ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ, ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ (move to higher ground) ಮತ್ತು 1077 ಗೆ ಕರೆ ಮಾಡಿ. Stay away from flood water.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 91,
+        "content": "Q: What is the number for ವಿಪತ್ತು ನಿರ್ವಹಣಾ helpline?\nA: The Karnataka Disaster Management Helpline number is 1077. It is toll-free and available 24/7.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 92,
+        "content": "Q: ಭೂಕುಸಿತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಭೂಕುಸಿತದ ಸಮಯದಲ್ಲಿ: 1) ತಕ್ಷಣ ಆ ಪ್ರದೇಶದಿಂದ ಹೊರಹೋಗಿ, 2) ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ತೆರಳಿ, 3) 1077 ಗೆ ಕರೆ ಮಾಡಿ, 4) ಮಳೆ ನೀರಿನ ಹರಿವಿನಿಂದ ದೂರವಿರಿ, 5) ಭೂಕುಸಿತದ ಶಬ್ದ ಕೇಳಿದರೆ ಎಚ್ಚರಿಕೆ ವಹಿಸಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 93,
+        "content": "Q: What should I do during a landslide?\nA: During a landslide: 1) Evacuate the area immediately, 2) Move to higher ground, 3) Call 1077, 4) Stay away from rainwater flow paths, 5) Be alert for sounds of moving debris.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 94,
+        "content": "Q: ಬಿಸಿಲಿನ ತಾಪದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬಿಸಿಲಿನ ತಾಪದ ಸಮಯದಲ್ಲಿ: 1) ಹೆಚ್ಚು ನೀರು ಕುಡಿಯಿರಿ, 2) ಮಧ್ಯಾಹ್ನ 11-3ರವರೆಗೆ ಹೊರಗೆ ಹೋಗದಿರಿ, 3) ತಂಪಾದ ವಸ್ತ್ರಗಳನ್ನು ಧರಿಸಿ, 4) ORS ದ್ರಾವಣವನ್ನು ಕುಡಿಯಿರಿ, 5) ತಲೆ ಮುಚ್ಚಿಕೊಳ್ಳಿ, 6) ತಂಪಾದ ಸ್ಥಳದಲ್ಲಿ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 95,
+        "content": "Q: What should I do during a heatwave?\nA: During a heatwave: 1) Drink plenty of water, 2) Avoid going outside between 11 AM - 3 PM, 3) Wear light-colored clothing, 4) Drink ORS solution, 5) Cover your head, 6) Rest in cool places.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 96,
+        "content": "Q: ಮಿಂಚು ಹೊಡೆಯುವ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಮಿಂಚು ಹೊಡೆಯುವ ಸಮಯದಲ್ಲಿ: 1) ಮರಗಳು, ಉನ್ನತ ವಸ್ತುಗಳಿಂದ ದೂರವಿರಿ, 2) ಒಳಗೆ ಇರಿ, 3) ವಿದ್ಯುತ್ ಸಾಧನಗಳನ್ನು ಬಳಸಬೇಡಿ, 4) ನೀರಿನಿಂದ ದೂರವಿರಿ, 5) ಕಾರಿನೊಳಗೆ ಇದ್ದರೆ ಸುರಕ್ಷಿತವಾಗಿದೆ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 97,
+        "content": "Q: What should I do during lightning?\nA: During lightning: 1) Stay away from trees and tall objects, 2) Stay indoors, 3) Do not use electrical appliances, 4) Stay away from water, 5) If in a car, you are safe.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 98,
+        "content": "Q: ಬರಗಾಲದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಬರಗಾಲದ ಸಮಯದಲ್ಲಿ: 1) ನೀರನ್ನು ಉಳಿಸಿ ಬಳಸಿ, 2) ಕಡಿಮೆ ನೀರಿನಲ್ಲಿ ಬೆಳೆಯುವ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಯಿರಿ, 3) rainwater harvesting ಮಾಡಿ, 4) ಸರ್ಕಾರದ ಸಹಾಯವಾಣಿಗೆ ಸಂಪರ್ಕಿಸಿ, 5) ಪಶುಗಳಿಗೆ ತ್ಯಾಜ್ಯ ನೀರನ್ನು ಬಳಸಬೇಡಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 99,
+        "content": "Q: What should I do during a drought?\nA: During a drought: 1) Conserve and reuse water, 2) Grow crops that require less water, 3) Practice rainwater harvesting, 4) Contact government helpline, 5) Do not give waste water to animals.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 100,
+        "content": "Q: ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ಏನು ನೀಡಬೇಕು?\nA: ವಿಪತ್ತು ಸಮಯದಲ್ಲಿ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ: 1) ಗಾಯವನ್ನು ಶುದ್ಧ ನೀರಿನಿಂದ ತೊಳೆಯಿರಿ, 2) ರಕ್ತಸ್ರಾವವಿದ್ದರೆ ಒತ್ತಡ ಹಾಕಿ, 3) ಶಾಕ್‌ಗೆ ಬಲಿಪಡುವವರನ್ನು ಮಲಗಿಸಿ, 4) 108 ಗೆ ಕರೆ ಮಾಡಿ, 5) ಗಾಯದ ಗಂಭೀರತೆ ಪರಿಶೀಲಿಸಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 101,
+        "content": "Q: What first aid should I give during a disaster?\nA: First aid during disaster: 1) Clean wounds with clean water, 2) Apply pressure for bleeding, 3) Lay down shock victims, 4) Call 108, 5) Assess severity of injuries.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 102,
+        "content": "Q: ನಿರ್ಗಮನದ ಸಮಯದಲ್ಲಿ ಏನು ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?\nA: ನಿರ್ಗಮನದ ಸಮಯದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ವಸ್ತುಗಳು: 1) ಮುಖ್ಯ ದಾಖಲೆಗಳು (ಆಧಾರ್, ರೇಷನ್ ಕಾರ್ಡ್), 2) ಔಷಧಿಗಳು, 3) ನೀರು ಮತ್ತು ಆಹಾರ, 4) ಟಾರ್ಚ್ ಮತ್ತು ಬ್ಯಾಟರಿಗಳು, 5) ಒಣ ಬಟ್ಟೆಗಳು, 6) ನಗದು ಮತ್ತು ಆಭರಣಗಳು.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 103,
+        "content": "Q: What should I carry during evacuation?\nA: Items to carry during evacuation: 1) Important documents (Aadhaar, ration card), 2) Medicines, 3) Water and food, 4) Torch and batteries, 5) Dry clothes, 6) Cash and jewelry.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 104,
+        "content": "Q: ತುರ್ತು ಕಿಟ್‌ನಲ್ಲಿ ಏನೆಲ್ಲಾ ಇರಬೇಕು?\nA: ತುರ್ತು ಕಿಟ್‌ನಲ್ಲಿ ಇರಬೇಕಾದ ವಸ್ತುಗಳು: 1) ನೀರು (3 ದಿನಗಳಿಗೆ), 2) ಒಣ ಆಹಾರ, 3) ಟಾರ್ಚ್ ಮತ್ತು ಬ್ಯಾಟರಿಗಳು, 4) ಪ್ರಥಮ ಚಿಕಿತ್ಸಾ ಕಿಟ್, 5) ಮುಖ್ಯ ದಾಖಲೆಗಳ ನಕಲು, 6) whistle, 7) ಮೊಬೈಲ್ ಚಾರ್ಜರ್.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 105,
+        "content": "Q: What should be in an emergency kit?\nA: Items for emergency kit: 1) Water (for 3 days), 2) Dry food, 3) Torch and batteries, 4) First aid kit, 5) Copies of important documents, 6) Whistle, 7) Mobile charger.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 106,
+        "content": "Q: ಸುನಾಮಿ ಎಚ್ಚರಿಕೆ ಬಂದರೆ ಏನು ಮಾಡಬೇಕು?\nA: ಸುನಾಮಿ ಎಚ್ಚರಿಕೆ ಬಂದರೆ: 1) ತಕ್ಷಣ ಎತ್ತರದ ಸ್ಥಳಕ್ಕೆ ಓಡಿ, 2) ಕಡಲತೀರದಿಂದ ಕನಿಷ್ಠ 2 ಕಿಮೀ ದೂರವಿರಿ, 3) ರೇಡಿಯೋ ಮೂಲಕ ಮಾಹಿತಿ ಪಡೆಯಿರಿ, 4) ಎಚ್ಚರಿಕೆ ರದ್ದಾಗುವವರೆಗೆ ಕಾಯಿರಿ, 5) 1077 ಗೆ ಕರೆ ಮಾಡಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 107,
+        "content": "Q: What should I do when a tsunami warning is issued?\nA: When tsunami warning is issued: 1) Run to higher ground immediately, 2) Stay at least 2 km away from coast, 3) Get information from radio, 4) Wait until warning is cancelled, 5) Call 1077.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 108,
+        "content": "Q: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ಸಮಯದಲ್ಲಿ: 1) ಮುಖಕವಚ ಧರಿಸಿ, 2) ಸಾಮಾಜಿಕ ಅಂತರ ಕಾಪಾಡಿಕೊಳ್ಳಿ, 3) ಕೈಗಳನ್ನು часто ತೊಳೆಯಿರಿ, 4) ಜನಸಂದಣಿಯಿಂದ ದೂರವಿರಿ, 5) ಲಸಿಕೆ ಹಾಕಿಸಿಕೊಳ್ಳಿ, 6) ರೋಗಲಕ್ಷಣಗಳಿದ್ದರೆ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 109,
+        "content": "Q: What should I do during a pandemic?\nA: During a pandemic: 1) Wear face masks, 2) Maintain social distance, 3) Wash hands frequently, 4) Avoid crowds, 5) Get vaccinated, 6) Contact doctor if symptoms appear.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 110,
+        "content": "Q: ರಸಾಯನಿಕ ದುರಂತದ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?\nA: ರಸಾಯನಿಕ ದುರಂತದ ಸಮಯದಲ್ಲಿ: 1) ತಕ್ಷಣ ಆ ಪ್ರದೇಶದಿಂದ ಹೊರಹೋಗಿ, 2) ಗಾಳಿಯ ದಿಕ್ಕಿಗೆ ವಿರುದ್ಧ ದಿಕ್ಕಿನಲ್ಲಿ ಹೋಗಿ, 3) 108 ಗೆ ಕರೆ ಮಾಡಿ, 4) ಶ್ವಾಸಕವಚ ಧರಿಸಿ, 5) ತ್ವರಿತವಾಗಿ ಸ್ನಾನ ಮಾಡಿ, 6) ಬಾಯಿಯಿಂದ ಉಸಿರಾಡಬೇಡಿ.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    },
+    {
+        "doc_id": 111,
+        "content": "Q: What should I do during a chemical emergency?\nA: During a chemical emergency: 1) Evacuate the area immediately, 2) Move upwind from the source, 3) Call 108, 4) Wear a mask, 5) Take quick shower, 6) Do not breathe through mouth.",
+        "disaster_type": "general",
+        "language": "unknown",
+        "source": "C:\\Users\\ASUS\\OneDrive\\Desktop\\mini-project\\kannada-disaster-management\\disaster_dataset\\kannada_disaster_alpaca.json"
+    }
+]
