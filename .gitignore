@@ -25,3 +25,5 @@ disaster_metadata.json
 # Generated audio artifacts
 input.wav
 output.mp3
+*.wav
+*.mp3

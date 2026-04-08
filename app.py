@@ -1,93 +1,97 @@
 import streamlit as st
+import threading
 from chatbot import ask_bot
-from voice_utils import record_audio, speech_to_text, speak
+from ultimate_voice_agent import record_audio, speech_to_text, speak
+
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
-    page_title="Kannada Disaster Chatbot",
+    page_title="Kannada Disaster Assistant",
     page_icon="🌊",
-    layout="wide"
+    layout="centered"
 )
 
-st.title("🌊 Kannada Disaster Management Chatbot")
-st.markdown("💬 Ask disaster-related questions in Kannada (Text or Voice)")
+# ---------------- HEADER ----------------
+st.title("🌊 Kannada Disaster Assistant")
+st.caption("Ask your question using text or voice")
 
-# ---------------- SESSION STATE ----------------
+# ---------------- SESSION ----------------
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# ---------------- DISPLAY CHAT HISTORY ----------------
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.write(message["content"])
+# ---------------- DISPLAY CHAT ----------------
+for msg in st.session_state.messages:
+    with st.chat_message(msg["role"]):
+        st.write(msg["content"])
 
-# ---------------- TEXT INPUT ----------------
-user_input = st.chat_input("Type your question in Kannada...")
+# ---------------- INPUT MODE ----------------
+mode = st.radio(
+    "Choose Input Mode:",
+    ["💬 Text", "🎤 Voice"],
+    horizontal=True
+)
 
-if user_input:
-    st.session_state.messages.append({"role": "user", "content": user_input})
+# ========================
+# TEXT MODE
+# ========================
+if mode == "💬 Text":
 
-    with st.chat_message("user"):
-        st.write(user_input)
+    user_input = st.chat_input("Type your question...")
 
-    with st.chat_message("assistant"):
-        with st.spinner("🤖 Thinking..."):
-            response = ask_bot(user_input)
-            st.write(response)
+    if user_input:
 
-            # 🔊 Speak response
-            speak(response)
+        # USER MESSAGE
+        st.session_state.messages.append({"role": "user", "content": user_input})
 
-    st.session_state.messages.append({"role": "assistant", "content": response})
+        with st.chat_message("user"):
+            st.write(user_input)
 
-# ---------------- VOICE INPUT ----------------
-st.divider()
-st.subheader("🎤 Voice Interaction")
+        # BOT RESPONSE
+        with st.chat_message("assistant"):
+            with st.spinner("Thinking..."):
+                response = ask_bot(user_input)
+                st.write(response)
 
-col1, col2 = st.columns(2)
+                # 🔊 Voice output (non-blocking)
+                threading.Thread(target=speak, args=(response,), daemon=True).start()
 
-with col1:
-    if st.button("🎙️ Speak Now"):
-        with st.spinner("🎤 Recording... Speak clearly"):
+        st.session_state.messages.append({"role": "assistant", "content": response})
+
+# ========================
+# VOICE MODE
+# ========================
+elif mode == "🎤 Voice":
+
+    st.markdown("Click below and speak in Kannada")
+
+    if st.button("🎙️ Start Speaking"):
+
+        with st.spinner("Listening..."):
             audio_file = record_audio()
 
-        with st.spinner("🧠 Converting speech to text..."):
+        with st.spinner("Processing..."):
             query = speech_to_text(audio_file)
 
-        if query.strip() == "":
-            st.error("⚠️ Could not detect speech. Try again.")
+        if not query:
+            st.warning("Could not understand. Try again.")
         else:
-            # Show user speech
-            st.success(f"🗣️ You said: {query}")
-
+            # USER MESSAGE
             st.session_state.messages.append({"role": "user", "content": query})
 
             with st.chat_message("user"):
                 st.write(query)
 
-            # Generate response
+            # BOT RESPONSE
             with st.chat_message("assistant"):
-                with st.spinner("🤖 Thinking..."):
+                with st.spinner("Thinking..."):
                     response = ask_bot(query)
                     st.write(response)
 
-                    # 🔊 Speak response
-                    speak(response)
+                    # 🔊 Voice output
+                    threading.Thread(target=speak, args=(response,), daemon=True).start()
 
-            st.session_state.messages.append({
-                "role": "assistant",
-                "content": response
-            })
-
-with col2:
-    st.info("""
-    🎯 **Voice Instructions**
-    - Click 🎙️ Speak Now  
-    - Speak clearly in Kannada  
-    - Wait for response  
-    - Bot replies in text + voice  
-    """)
+            st.session_state.messages.append({"role": "assistant", "content": response})
 
 # ---------------- FOOTER ----------------
 st.divider()
-st.caption("🚀 Powered by RAG + FAISS + Groq LLM + Whisper + gTTS")
+st.caption("🎯 Kannada Voice AI • Powered by RAG + Gemini")

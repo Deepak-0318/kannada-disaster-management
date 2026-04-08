@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 # Load embedding model
-model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+model = SentenceTransformer("BAAI/bge-base-en-v1.5")
 
 data = []
 questions = []
