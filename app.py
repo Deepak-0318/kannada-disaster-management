@@ -1,7 +1,7 @@
 import streamlit as st
 import threading
 from chatbot import ask_bot
-from ultimate_voice_agent import record_audio, speech_to_text, speak
+from voice_agent import record_audio, speech_to_text, speak
 
 
 # ---------------- PAGE CONFIG ----------------

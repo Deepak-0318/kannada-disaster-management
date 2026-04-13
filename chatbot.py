@@ -12,13 +12,13 @@ from sentence_transformers import SentenceTransformer
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-# ✅ Latest working model
+# Latest working model
 gemini_model = genai.GenerativeModel("models/gemini-flash-latest")
 
 # =========================
 # LOAD EMBEDDING MODEL
 # =========================
-embed_model = SentenceTransformer("BAAI/bge-base-en-v1.5")
+embed_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
 
 # =========================
 # LOAD FAISS INDEX
@@ -39,32 +39,37 @@ def retrieve_context(query, top_k=5):
     D, I = index.search(q_embed, top_k)
 
     results = []
-    for idx in I[0][:3]:
+    for idx in I[0]:
         item = metadata[idx]
-        results.append(item["output"])
+        results.append(item["answer"])
 
-    return "\n".join(results)
+    context = "\n\n".join([f"- {r}" for r in results])
+    return context
+
 
 # =========================
 # MAIN BOT FUNCTION
 # =========================
 def ask_bot(question):
+    if not any("\u0C80" <= c <= "\u0CFF" for c in question):
+        question = f"ಈ ಪ್ರಶ್ನೆಯನ್ನು ಕನ್ನಡದಲ್ಲಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ: {question}"
 
     context = retrieve_context(question)
+    if not context.strip():
+        context = "ಸಾಮಾನ್ಯ ವಿಪತ್ತು ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶನ ನೀಡಿರಿ"
 
     prompt = f"""
 ನೀವು ಒಂದು disaster management assistant.
 
-ನಿಯಮಗಳು (STRICT):
-- ಉತ್ತರವನ್ನು ಕನ್ನಡದಲ್ಲಿ ಮಾತ್ರ ಕೊಡಿ
-- ಖಂಡಿತವಾಗಿ 5 ಪಾಯಿಂಟ್‌ಗಳು ಮಾತ್ರ ಕೊಡಿ
-- ಪ್ರತಿಯೊಂದು ಪಾಯಿಂಟ್ 1 ರಿಂದ 5 ಸಂಖ್ಯೆ ಇರಬೇಕು
-- ಪ್ರತಿಯೊಂದು ಪಾಯಿಂಟ್ ಸಂಪೂರ್ಣ ವಾಕ್ಯವಾಗಿರಬೇಕು
-- ಯಾವುದೇ ಪಾಯಿಂಟ್ ಅರ್ಧದಲ್ಲಿ ನಿಲ್ಲಬಾರದು
-- ಪುನರಾವರ್ತನೆ ಬೇಡ
-- ಸರಳ ಮತ್ತು ನೈಸರ್ಗಿಕ ಕನ್ನಡ ಬಳಸಿ
+ಕಟ್ಟುನಿಟ್ಟಿನ ನಿಯಮಗಳು:
+- ಉತ್ತರ ಕನ್ನಡದಲ್ಲಿ ಮಾತ್ರ ಇರಬೇಕು
+- ಕಡ್ಡಾಯವಾಗಿ 5 ಪಾಯಿಂಟ್‌ಗಳು
+- 1 ರಿಂದ 5 ಕ್ರಮದಲ್ಲಿ ಸಂಖ್ಯೆ
+- ಪ್ರತಿಯೊಂದು ಪಾಯಿಂಟ್ ಪೂರ್ಣ ವಾಕ್ಯವಾಗಿರಬೇಕು
+- ಪುನರಾವರ್ತನೆ ಮಾಡಬಾರದು
+- ಅರ್ಥಪೂರ್ಣ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ಸಲಹೆಗಳು ಮಾತ್ರ ಕೊಡಬೇಕು
 
-ಸಂದರ್ಭ:
+ಸಂದರ್ಭ ಮಾಹಿತಿ:
 {context}
 
 ಪ್ರಶ್ನೆ:
@@ -97,17 +102,18 @@ def ask_bot(question):
 
     return "\n".join(points[:5])
 
+
 # =========================
 # TERMINAL TEST
 # =========================
 def main():
-    print("\n🚀 Chatbot Ready\n")
+    print("\nChatbot Ready\n")
 
     while True:
-        q = input("🧑 You: ")
+        q = input("You: ")
 
         if q.lower() == "exit":
-            print("👋 Exiting chatbot...")
+            print("Exiting chatbot...")
             break
 
         if not q.strip():
@@ -115,8 +121,9 @@ def main():
 
         ans = ask_bot(q)
 
-        print("\n🤖 Bot:\n", ans)
+        print("\nBot:\n", ans)
         print("-" * 50)
+
 
 # =========================
 if __name__ == "__main__":
