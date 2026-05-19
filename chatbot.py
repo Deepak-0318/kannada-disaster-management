@@ -18,7 +18,7 @@ gemini_model = genai.GenerativeModel("models/gemini-flash-latest")
 # =========================
 # LOAD EMBEDDING MODEL
 # =========================
-embed_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
+embed_model = SentenceTransformer("BAAI/bge-small-en-v1.5", local_files_only=True)
 
 # =========================
 # LOAD FAISS INDEX
