@@ -81,7 +81,7 @@ EMERGENCY_KEYWORDS = [
 # =========================
 RESPONSE_CACHE = {}
 CACHE_MAX_SIZE = 1000
-CONFIDENCE_THRESHOLD = 0.01  # Adjusted based on actual RRF score distribution
+CONFIDENCE_THRESHOLD = 0.0  # Disabled - return top 3 results always
 
 SAFE_FALLBACK_RESPONSES = {
     "low_confidence": """ಕ್ಷಮಿಸಿ, ಈ ನಿರ್ದಿಷ್ಟ ಪ್ರಶ್ನೆಗೆ ನನ್ನ ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ಸಾಕಷ್ಟು ಮಾಹಿತಿ ಇಲ್ಲ.
@@ -150,16 +150,61 @@ def sparse_search(query, top_k=20):
     scores = bm25_index.get_scores(tokenized_query)
     return np.argsort(scores)[::-1][:top_k]
 
-def retrieve_context(query, top_k=5):
+def deduplicate_results(results_with_scores, similarity_threshold=0.6):
     """
-    Hybrid retrieval with parallel processing and confidence scoring
-    Returns: (context, confidence_score)
+    Remove duplicate or highly similar results based on text similarity
+    Uses aggressive deduplication to ensure diverse results
+    Returns deduplicated list maintaining order by score
+    """
+    if not results_with_scores:
+        return []
+    
+    deduplicated = []
+    seen_texts = []
+    
+    for result in results_with_scores:
+        answer = result["answer"].strip()
+        
+        # Check if this answer is too similar to any already selected
+        is_duplicate = False
+        for seen_text in seen_texts:
+            # Simple word-based similarity check
+            answer_words = set(tokenize_kannada(answer))
+            seen_words = set(tokenize_kannada(seen_text))
+            
+            if not answer_words or not seen_words:
+                continue
+            
+            # Calculate Jaccard similarity
+            intersection = len(answer_words & seen_words)
+            union = len(answer_words | seen_words)
+            similarity = intersection / union if union > 0 else 0
+            
+            # Also check if one is a substring of the other (very similar)
+            if answer in seen_text or seen_text in answer:
+                similarity = 1.0
+            
+            if similarity >= similarity_threshold:
+                is_duplicate = True
+                break
+        
+        if not is_duplicate:
+            deduplicated.append(result)
+            seen_texts.append(answer)
+    
+    return deduplicated
+
+
+def retrieve_context(query, top_k=7):
+    """
+    Hybrid retrieval with parallel processing and aggressive deduplication
+    Returns: (context, confidence_score, results_list)
     """
     # PARALLEL RETRIEVAL (SPEC-05 Optimization)
     with ThreadPoolExecutor(max_workers=2) as executor:
         # Submit both tasks simultaneously
-        dense_future = executor.submit(dense_search, query, 20)
-        sparse_future = executor.submit(sparse_search, query, 20)
+        dense_future = executor.submit(dense_search, query, 50)  # Get many candidates
+        sparse_future = executor.submit(sparse_search, query, 50)
         
         # Wait for both to complete
         dense_candidates = dense_future.result()
@@ -185,17 +230,44 @@ def retrieve_context(query, top_k=5):
     # Sort candidates by RRF score descending
     sorted_candidates = sorted(rrf_scores.keys(), key=lambda x: rrf_scores[x], reverse=True)
 
-    # 4. SELECT TOP-K and calculate confidence
-    final_results = sorted_candidates[:top_k]
-    top_confidence = rrf_scores[sorted_candidates[0]] if sorted_candidates else 0.0
-
-    results = []
-    for idx in final_results:
+    # 4. GET MANY CANDIDATES FOR DEDUPLICATION (top 30)
+    candidate_results = sorted_candidates[:30]
+    
+    results_with_scores = []
+    for idx in candidate_results:
         item = metadata[idx]
-        results.append(item["answer"])
-
+        results_with_scores.append({
+            "answer": item["answer"],
+            "question": item["question"],
+            "score": rrf_scores[idx]
+        })
+    
+    # 5. AGGRESSIVE DEDUPLICATION (60% similarity threshold)
+    deduplicated = deduplicate_results(results_with_scores, similarity_threshold=0.6)
+    
+    # 6. SELECT TOP-K UNIQUE RESULTS (flexible 3-7)
+    final_results = deduplicated[:top_k]
+    
+    # If we don't have enough unique results, lower the threshold more
+    if len(final_results) < 3:
+        deduplicated = deduplicate_results(results_with_scores, similarity_threshold=0.5)
+        final_results = deduplicated[:top_k]
+    
+    # If still not enough, use even lower threshold
+    if len(final_results) < 3:
+        deduplicated = deduplicate_results(results_with_scores, similarity_threshold=0.4)
+        final_results = deduplicated[:top_k]
+    
+    # Last resort: just take what we have
+    if len(final_results) < 3 and results_with_scores:
+        final_results = results_with_scores[:top_k]
+    
+    top_confidence = final_results[0]["score"] if final_results else 0.0
+    
+    results = [r["answer"] for r in final_results]
     context = "\n\n".join([f"- {r}" for r in results])
-    return context, top_confidence
+    
+    return context, top_confidence, final_results
 
 
 # =========================
@@ -247,114 +319,39 @@ def ask_bot(question, emergency_mode=None):
     if cached_response:
         return cached_response
 
-    # 2. RETRIEVE CONTEXT WITH CONFIDENCE (SPEC-05)
-    top_k = 2 if is_emergency else 5
-    context, confidence = retrieve_context(question, top_k=top_k)
+    # 2. RETRIEVE CONTEXT - GET 5-7 RESULTS (flexible)
+    top_k = 3 if is_emergency else 7  # Emergency: 3 quick points, Normal: up to 7 detailed
+    context, confidence, results_list = retrieve_context(question, top_k=top_k)
     
-    # 3. CHECK CONFIDENCE THRESHOLD (SPEC-05 Anti-Hallucination)
-    if confidence < CONFIDENCE_THRESHOLD:
-        fallback = get_safe_fallback(question, is_emergency)
-        cache_response(question, is_emergency, fallback)
-        return fallback
-    
+    # 3. ALWAYS USE RETRIEVED RESULTS (No confidence filtering)
     if not context.strip():
         fallback = get_safe_fallback(question, is_emergency)
         cache_response(question, is_emergency, fallback)
         return fallback
 
-    # 4. GENERATE RESPONSE WITH STRICT GROUNDING
-    if is_emergency:
-        # Fast Path Prompt: Direct, actionable, strict max words constraint
-        prompt = f"""ನೀವು ತುರ್ತು ಪ್ರತಿಕ್ರಿಯೆ ನೀಡುವ ವಿಪತ್ತು ನಿರ್ವಹಣಾ ರಕ್ಷಕರು (Emergency Responder).
-ಕಟ್ಟುನಿಟ್ಟಿನ ನಿಯಮಗಳು:
-- ಕೇವಲ ಕೆಳಗಿನ ಸಂದರ್ಭ ಮಾಹಿತಿಯಿಂದ ಮಾತ್ರ ಉತ್ತರಿಸಿ
-- ನಿಮಗೆ ಗೊತ್ತಿಲ್ಲದಿದ್ದರೆ "ನನಗೆ ಖಚಿತವಾಗಿ ತಿಳಿದಿಲ್ಲ, ದಯವಿಟ್ಟು 108 ಗೆ ಕರೆ ಮಾಡಿ" ಎಂದು ಹೇಳಿ
-- ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಊಹಿಸಬೇಡಿ ಅಥವಾ ರಚಿಸಬೇಡಿ
-- ಉತ್ತರ ಕನ್ನಡದಲ್ಲಿ ಮಾತ್ರ ಇರಬೇಕು (strictly in Kannada script)
-- ಕೇವಲ 3 ಪ್ರಮುಖ ಮತ್ತು ಜರೂರಾದ ಕ್ರಿಯೆಯ ಪಾಯಿಂಟ್‌ಗಳು ಮಾತ್ರ ಇರಬೇಕು
-- 1 ರಿಂದ 3 ಕ್ರಮದಲ್ಲಿ ಸಂಖ್ಯೆ
-- ಒಟ್ಟು ಗರಿಷ್ಠ 40 ಪದಗಳು (under 40 words)
-- ಯಾವುದೇ ಪೀಠಿಕೆ, ವಿವರಣೆ ಅಥವಾ ಸಂಭಾಷಣೆ ಇರಬಾರದು
-
-ಸಂದರ್ಭ ಮಾಹಿತಿ (ಇದರಿಂದ ಮಾತ್ರ ಉತ್ತರಿಸಿ):
-{context}
-
-ಪ್ರಶ್ನೆ:
-{question}
-
-ಉತ್ತರ:
-1.
-2.
-3.
-"""
-        # Low latency generation configuration (low max_tokens, low temperature)
-        response = gemini_model.generate_content(
-            prompt,
-            generation_config={
-                "max_output_tokens": 80,
-                "temperature": 0.1
-            }
-        )
-    else:
-        # Standard Normal Mode Prompt: Detailed and informative
-        prompt = f"""ನೀವು ಒಂದು disaster management assistant.
-
-ಕಟ್ಟುನಿಟ್ಟಿನ ನಿಯಮಗಳು:
-- ಕೇವಲ ಕೆಳಗಿನ ಸಂದರ್ಭ ಮಾಹಿತಿಯಿಂದ ಮಾತ್ರ ಉತ್ತರಿಸಿ
-- ಸಂದರ್ಭದಲ್ಲಿ ಮಾಹಿತಿ ಇಲ್ಲದಿದ್ದರೆ, "ಈ ಪ್ರಶ್ನೆಗೆ ನನ್ನ ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ಮಾಹಿತಿ ಇಲ್ಲ" ಎಂದು ಹೇಳಿ
-- ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಊಹಿಸಬೇಡಿ
-- ಉತ್ತರ ಕನ್ನಡದಲ್ಲಿ ಮಾತ್ರ ಇರಬೇಕು
-- ಕಡ್ಡಾಯವಾಗಿ 5 ಪಾಯಿಂಟ್‌ಗಳು
-- 1 ರಿಂದ 5 ಕ್ರಮದಲ್ಲಿ ಸಂಖ್ಯೆ
-- ಪ್ರತಿಯೊಂದು ಪಾಯಿಂಟ್ ಪೂರ್ಣ ವಾಕ್ಯವಾಗಿರಬೇಕು
-- ಪುನರಾವರ್ತನೆ ಮಾಡಬಾರದು
-- ಅರ್ಥಪೂರ್ಣ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ಸಲಹೆಗಳು ಮಾತ್ರ ಕೊಡಬೇಕು
-
-ಸಂದರ್ಭ ಮಾಹಿತಿ (ಇದರಿಂದ ಮಾತ್ರ ಉತ್ತರಿಸಿ):
-{context}
-
-ಪ್ರಶ್ನೆ:
-{question}
-
-ಉತ್ತರ:
-1.
-2.
-3.
-4.
-5.
-"""
-        response = gemini_model.generate_content(prompt)
-
-    answer = response.text.strip()
-
-    # 5. VALIDATE RESPONSE GROUNDING (SPEC-05 Anti-Hallucination)
-    is_valid, overlap_ratio = validate_response_grounding(answer, context)
-    if not is_valid:
-        print(f"⚠️  Low grounding detected (overlap: {overlap_ratio:.2%}), using fallback")
-        fallback = get_safe_fallback(question, is_emergency)
-        cache_response(question, is_emergency, fallback)
-        return fallback
+    # 4. FORMAT RESULTS DIRECTLY (Skip LLM for cleaner output)
+    # Return the deduplicated retrieval results as-is
+    answer = "\n".join([f"{i+1}. {results_list[i]['answer']}" for i in range(len(results_list))])
 
     # =========================
-    # CLEAN + STRUCTURE OUTPUT
+    # CLEAN + STRUCTURE OUTPUT - Flexible 3-7 points
     # =========================
     lines = [line.strip() for line in answer.split("\n") if line.strip()]
 
     points = []
-    expected_limit = 3 if is_emergency else 5
-    starts_tuple = ("1", "2", "3") if is_emergency else ("1", "2", "3", "4", "5")
-    
     for line in lines:
-        if line.startswith(starts_tuple):
+        # Match any numbered point (1. through 9.)
+        if any(line.startswith(f"{i}.") for i in range(1, 10)):
             points.append(line)
 
-    # Fallback (rare case)
-    if len(points) < expected_limit:
-        final_answer = "\n".join(lines[:expected_limit])
+    # Use all points we got (no strict limit)
+    if len(points) >= 3:
+        final_answer = "\n".join(points)
     else:
-        final_answer = "\n".join(points[:expected_limit])
+        # Fallback: use first few lines
+        final_answer = "\n".join(lines[:7])
 
-    # 6. CACHE RESPONSE (SPEC-05)
+    # 5. CACHE RESPONSE
     cache_response(question, is_emergency, final_answer)
     
     return final_answer

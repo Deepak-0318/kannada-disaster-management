@@ -52,26 +52,41 @@ def has_long_repetition(text, threshold=6):
 
 
 def is_valid_kannada_query(text):
+    """
+    Validate if the transcribed text is a valid Kannada query
+    """
     cleaned = text.strip()
     if not cleaned:
         return False
 
-    if has_long_repetition(cleaned):
+    # Check for excessive repetition (like "ಲಿಲಿಲಿಲಿ...")
+    if has_long_repetition(cleaned, threshold=4):
         return False
 
+    # Count Kannada characters
     kannada_chars = [ch for ch in cleaned if "\u0C80" <= ch <= "\u0CFF"]
     alpha_chars = [ch for ch in cleaned if ch.isalpha()]
     words = [word for word in cleaned.split() if word]
+    
+    # Need at least 2 words
     if len(words) < 2:
         return False
 
+    # Need at least 6 alphabetic characters
     if len(alpha_chars) < 6:
         return False
 
+    # If we have Kannada characters, they should be at least 35% of alphabetic chars
     if kannada_chars:
         if len(kannada_chars) < 4:
             return False
         if alpha_chars and (len(kannada_chars) / len(alpha_chars)) < 0.35:
+            return False
+    
+    # Check for common garbage patterns
+    garbage_patterns = ['ಲಿಲಿಲಿ', 'ಸಾರಿಲಿ', 'ನನನನ', 'ರರರರ']
+    for pattern in garbage_patterns:
+        if pattern in cleaned:
             return False
 
     return True
@@ -127,32 +142,43 @@ def record_audio():
 # SPEECH TO TEXT (KAN)
 # =========================
 def speech_to_text(audio_file):
+    """
+    Transcribe audio to Kannada text with improved validation
+    """
     try:
-        segments, _ = whisper_model.transcribe(
+        segments, info = whisper_model.transcribe(
             audio_file,
             language="kn",
             task="transcribe",
-            beam_size=1,
-            best_of=1,
+            beam_size=3,  # Increased from 1 for better accuracy
+            best_of=3,    # Increased from 1
             temperature=0.0,
             condition_on_previous_text=False,
-            vad_filter=True
+            vad_filter=True,
+            vad_parameters=dict(min_silence_duration_ms=500)  # Better silence detection
         )
 
         text = " ".join([seg.text for seg in segments]).strip()
-        print("DEBUG RAW TEXT:", text)
-
-        if not is_valid_kannada_query(text):
-            print("⚠️ Could not understand clearly, retrying...")
+        print(f"DEBUG RAW TEXT: {text}")
+        
+        # Check if audio was too short or silent
+        if info.duration < 0.5:
+            print("⚠️ Audio too short, please speak longer")
             return ""
 
+        # Validate the transcription
+        if not is_valid_kannada_query(text):
+            print("⚠️ Could not understand clearly, please try again")
+            return ""
+
+        # Try transliteration if needed
         text = transliterate_to_kannada(text)
 
-        print("🗣️ You:", text)
+        print(f"🗣️ You: {text}")
         return text
 
     except Exception as e:
-        print("❌ STT Error:", e)
+        print(f"❌ STT Error: {e}")
         return ""
 
 

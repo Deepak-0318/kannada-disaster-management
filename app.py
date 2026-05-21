@@ -51,12 +51,28 @@ def run_tts_sync(text, output_path):
     Synchronous wrapper for running Edge-TTS in Flask request threads.
     """
     try:
-        loop = asyncio.get_event_loop()
-    except RuntimeError:
+        print(f"🔊 TTS: Generating audio for text: {text[:50]}...")
+        print(f"🔊 TTS: Output path: {output_path}")
+        
+        # Create a new event loop for this thread
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
-    
-    loop.run_until_complete(synthesize_speech(text, output_path))
+        try:
+            loop.run_until_complete(synthesize_speech(text, output_path))
+            
+            # Verify file was created
+            if os.path.exists(output_path):
+                file_size = os.path.getsize(output_path)
+                print(f"✅ TTS: Audio file created successfully ({file_size} bytes)")
+            else:
+                print(f"❌ TTS: Audio file was not created at {output_path}")
+                
+        finally:
+            loop.close()
+    except Exception as e:
+        print(f"❌ TTS Sync Wrapper Error: {e}")
+        import traceback
+        traceback.print_exc()
 
 
 # ==========================================
