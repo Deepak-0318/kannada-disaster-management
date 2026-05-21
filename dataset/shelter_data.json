@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name_kn": "ಬೆಳಗಾವಿ ಸರಕಾರಿ ಪದವಿ ಕಾಲೇಜು ಪರಿಹಾರ ಕೇಂದ್ರ (EOC-Belagavi-01)",
+        "district": "Belagavi",
+        "district_kn": "ಬೆಳಗಾವಿ",
+        "lat": 16.8524,
+        "lng": 74.5085,
+        "status": "OPEN",
+        "capacity_used": 142,
+        "capacity_max": 300
+    },
+    {
+        "id": 2,
+        "name_kn": "ಮಡಿಕೇರಿ ಯುವಜನ ಭವನ ಭೂಕುಸಿತ ಶಿಬಿರ (EOC-Kodagu-03)",
+        "district": "Kodagu",
+        "district_kn": "ಕೊಡಗು",
+        "lat": 12.4244,
+        "lng": 75.7382,
+        "status": "FULL",
+        "capacity_used": 150,
+        "capacity_max": 150
+    },
+    {
+        "id": 3,
+        "name_kn": "ಮಂಗಳೂರು ಉಳ್ಳಾಲ ಕಡಲ್ಕೋರೆ ಸಂರಕ್ಷಣಾ ಕೇಂದ್ರ (EOC-DK-02)",
+        "district": "Dakshina Kannada",
+        "district_kn": "ದಕ್ಷಿಣ ಕನ್ನಡ",
+        "lat": 12.8703,
+        "lng": 74.8826,
+        "status": "OPEN",
+        "capacity_used": 68,
+        "capacity_max": 200
+    },
+    {
+        "id": 4,
+        "name_kn": "ಕಾರವಾರ ಬಂದರು ಪ್ರಾಧಿಕಾರ ನೆರೆ ಶಿಬಿರ (EOC-UK-05)",
+        "district": "Uttara Kannada",
+        "district_kn": "ಉತ್ತರ ಕನ್ನಡ",
+        "lat": 14.8118,
+        "lng": 74.1304,
+        "status": "OPEN",
+        "capacity_used": 115,
+        "capacity_max": 250
+    },
+    {
+        "id": 5,
+        "name_kn": "ಮೈಸೂರು ಕಲ್ಯಾಣ ಮಂಟಪ ಪ್ರವಾಹ ಸಂತ್ರಸ್ತರ ಕೇಂದ್ರ (EOC-Mysore-01)",
+        "district": "Mysuru",
+        "district_kn": "ಮೈಸೂರು",
+        "lat": 12.3024,
+        "lng": 76.6386,
+        "status": "OPEN",
+        "capacity_used": 35,
+        "capacity_max": 100
+    }
+]

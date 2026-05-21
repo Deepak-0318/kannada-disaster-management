@@ -1,4 +1,4 @@
-streamlit
+Flask
 python-dotenv
 google-generativeai
 groq
@@ -12,6 +12,7 @@ faster-whisper
 pyttsx3
 edge-tts
 langdetect
+rank-bm25
 
 # # Create virtual environment (do this once)
 # #python3 -m venv venv

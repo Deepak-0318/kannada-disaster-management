@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ರಾಜ್ಯ ತುರ್ತು ಕಾರ್ಯಾಚರಣೆ ಕೇಂದ್ರ | Karnataka Disaster AI Assistant</title>
+    
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet.js Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Top Decorative Line -->
+    <div class="system-status-bar"></div>
+
+    <div class="dashboard-container">
+        
+        <!-- ==============================================
+             1. HEADER: EOC CENTRAL CONTROLLER
+             ============================================== -->
+        <header class="app-header">
+            <div class="header-branding">
+                <div class="logo-orb">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="branding-text">
+                    <h1>ರಾಜ್ಯ ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಪ್ರಾಧಿಕಾರ</h1>
+                    <span class="sub-brand">STATE EMERGENCY OPERATIONS CENTER • EOC-01</span>
+                </div>
+            </div>
+            
+            <div class="header-controls">
+                <div class="mode-badge" id="system-mode-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text" id="mode-text">ಸಾಮಾನ್ಯ ಮೋಡ್ (NORMAL)</span>
+                </div>
+                <div class="live-clock" id="live-clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-string">00:00:00</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ==============================================
+             2. MAIN GRID LAYOUT
+             ============================================== -->
+        <main class="dashboard-grid">
+            
+            <!-- ------------------------------------------
+                 COLUMN A: CONTROLS & DANGER ZONE
+                 ------------------------------------------ -->
+            <section class="grid-panel panel-left">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-sliders"></i> ನಿಯಂತ್ರಣ ಕೇಂದ್ರ</h2>
+                    <span class="panel-subtitle">CONTROL CENTER</span>
+                </div>
+                
+                <!-- Mode manual selector card -->
+                <div class="control-card">
+                    <h3>ಸಿಸ್ಟಮ್ ಸ್ಥಿತಿ (System State)</h3>
+                    <div class="manual-mode-selector">
+                        <button class="state-btn active" id="btn-mode-normal">
+                            <i class="fa-solid fa-shield"></i> ಸಾಮಾನ್ಯ
+                        </button>
+                        <button class="state-btn" id="btn-mode-emergency">
+                            <i class="fa-solid fa-triangle-exclamation"></i> ತುರ್ತು (Emergency)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Action Cards for Kannada Prompts -->
+                <div class="control-card scrollable-card">
+                    <h3>ತ್ವರಿತ ಪ್ರಶ್ನೆಗಳು (Quick Triggers)</h3>
+                    <div class="quick-triggers-grid">
+                        <button class="trigger-btn" data-query="ಪ್ರವಾಹ ಸಮಯದಲ್ಲಿ ಏನು ಮಾಡಬೇಕು?">
+                            <span class="trigger-icon flood"><i class="fa-solid fa-house-flood-water"></i></span>
+                            <span class="trigger-label">ಪ್ರವಾಹ ಸುರಕ್ಷತೆ</span>
+                        </button>
+                        <button class="trigger-btn" data-query="ಭೂಕುಸಿತ ಉಂಟಾದಾಗ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ಮುನ್ನೆಚ್ಚರಿಕೆಗಳು ಯಾವುವು?">
+                            <span class="trigger-icon landslide"><i class="fa-solid fa-hill-rockslide"></i></span>
+                            <span class="trigger-label">ಭೂಕುಸಿತ ಎಚ್ಚರಿಕೆ</span>
+                        </button>
+                        <button class="trigger-btn" data-query="ಕಿಚ್ಚು ಅಥವಾ ಬೆಂಕಿ ಆಕಸ್ಮಿಕ ಸಂಭವಿಸಿದಲ್ಲಿ ತುರ್ತು ಕ್ರಮಗಳೇನು?">
+                            <span class="trigger-icon fire"><i class="fa-solid fa-fire-extinguisher"></i></span>
+                            <span class="trigger-label">ಬೆಂಕಿ ದುರಂತ</span>
+                        </button>
+                        <button class="trigger-btn" data-query="ಭೂಕಂಪನ ಸಮಯದಲ್ಲಿ ಮನೆಯಲ್ಲಿದ್ದರೆ ರಕ್ಷಣೆ ಹೇಗೆ?">
+                            <span class="trigger-icon earthquake"><i class="fa-solid fa-house-crack"></i></span>
+                            <span class="trigger-label">ಭೂಕಂಪನ ಕ್ರಮ</span>
+                        </button>
+                        <button class="trigger-btn" data-query="ವಿಪತ್ತು ನಿರ್ವಹಣೆಯ ರಾಜ್ಯ ನಿಯಂತ್ರಣ ಕೊಠಡಿಯ ದೂರವಾಣಿ ಸಂಖ್ಯೆಗಳು ಯಾವುವು?">
+                            <span class="trigger-icon phone"><i class="fa-solid fa-phone-volume"></i></span>
+                            <span class="trigger-label">ಸಂಪರ್ಕ ಸಂಖ್ಯೆಗಳು</span>
+                        </button>
+                        <button class="trigger-btn" data-query="ತೀವ್ರ ಉಷ್ಣಗಾಳಿ ತಡೆಯಲು ಸಾರ್ವಜನಿಕರು ಏನು ಮಾಡಬೇಕು?">
+                            <span class="trigger-icon heatwave"><i class="fa-solid fa-temperature-arrow-up"></i></span>
+                            <span class="trigger-label">ಉಷ್ಣಗಾಳಿ ರಕ್ಷಣೆ</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Helpline Drawer Panel inside Col A -->
+                <div class="control-card helpline-card">
+                    <div class="helpline-header">
+                        <h3>ತುರ್ತು ಸಹಾಯವಾಣಿಗಳು</h3>
+                        <span class="neon-alert-tag">LIVE SUPPORT</span>
+                    </div>
+                    <div class="helpline-list">
+                        <div class="helpline-item">
+                            <div class="line-detail">
+                                <span class="line-name">ರಾಜ್ಯ ನಿಯಂತ್ರಣ ಕೊಠಡಿ (SEOC)</span>
+                                <span class="line-num">1070</span>
+                            </div>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('1070')">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="helpline-item">
+                            <div class="line-detail">
+                                <span class="line-name">ಜಿಲ್ಲಾ ನಿಯಂತ್ರಣ ಕೊಠಡಿ (DEOC)</span>
+                                <span class="line-num">1077</span>
+                            </div>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('1077')">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="helpline-item">
+                            <div class="line-detail">
+                                <span class="line-name">ಪೊಲೀಸ್ ತುರ್ತು ಸೇವೆ</span>
+                                <span class="line-num">112</span>
+                            </div>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('112')">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="helpline-item">
+                            <div class="line-detail">
+                                <span class="line-name">ಅಗ್ನಿಶಾಮಕ ದಳ</span>
+                                <span class="line-num">101</span>
+                            </div>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('101')">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="helpline-item">
+                            <div class="line-detail">
+                                <span class="line-name">ಆರೋಗ್ಯ ಆಂಬ್ಯುಲೆನ್ಸ್ (TTS)</span>
+                                <span class="line-num">108</span>
+                            </div>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('108')">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="helpline-item">
+                            <div class="line-detail">
+                                <span class="line-name">ರಾಷ್ಟ್ರೀಯ ವಿಪತ್ತು ಸ್ಪಂದನಾ ಪಡೆ (NDRF)</span>
+                                <span class="line-num">9711077372</span>
+                            </div>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('9711077372')">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ------------------------------------------
+                 COLUMN B: INTERACTIVE VOICE & CHAT CONSOLE
+                 ------------------------------------------ -->
+            <section class="grid-panel panel-center">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-headset"></i> ಧ್ವನಿ ಮತ್ತು ಚಾಟ್ ಸಂವಹನ ಕನ್ಸೋಲ್</h2>
+                    <span class="panel-subtitle">COMMUNICATION CONSOLE</span>
+                </div>
+                
+                <!-- Chat Window Container -->
+                <div class="chat-container" id="chat-messages">
+                    <div class="chat-message bot">
+                        <div class="chat-avatar">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div class="chat-bubble">
+                            ನಮಸ್ಕಾರ, ಕರ್ನಾಟಕ ವಿಪತ್ತು ನಿರ್ವಹಣಾ ಧ್ವನಿ ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ. ನಾನು ನಿಮಗೆ ಯಾವ ರೀತಿ ಸಹಾಯ ಮಾಡಬಹುದು? ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ಧ್ವನಿ ಬಟನ್ ಒತ್ತಿ ಮಾತನಾಡಿ.
+                            <div class="timestamp">ಆನ್ಲೈನ್</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Voice Waveform Visualizer Wrapper -->
+                <div class="visualizer-wrapper" id="visualizer-box">
+                    <div class="wave-visualizer-container">
+                        <canvas id="wave-canvas"></canvas>
+                    </div>
+                    <div class="recording-meta">
+                        <span id="recording-timer">0.0s</span>
+                        <span id="panic-acoustic-badge" class="panic-tag hidden"><i class="fa-solid fa-triangle-exclamation"></i> ಧ್ವನಿ ಒತ್ತಡ ಪತ್ತೆಯಾಗಿದೆ! (Panic voice detected)</span>
+                    </div>
+                </div>
+
+                <!-- Input console -->
+                <div class="input-panel">
+                    <div class="input-row">
+                        <input type="text" id="text-input" placeholder="ಇಲ್ಲಿ ಪ್ರಶ್ನೆಯನ್ನು ಕನ್ನಡದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ..." autocomplete="off">
+                        
+                        <!-- Premium Microphone Button -->
+                        <button class="mic-btn" id="btn-record" title="ಮಾತನಾಡಲು ಒತ್ತಿ ಹಿಡಿಯಿರಿ">
+                            <i class="fa-solid fa-microphone"></i>
+                            <div class="mic-pulse-ring"></div>
+                        </button>
+
+                        <button class="send-btn" id="btn-send">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Hidden audio elements -->
+                    <audio id="audio-player" class="hidden"></audio>
+                </div>
+            </section>
+            
+            <!-- ------------------------------------------
+                 COLUMN C: GIS SHELTER MAP & CAPACITY FEED
+                 ------------------------------------------ -->
+            <section class="grid-panel panel-right">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-map-location-dot"></i> ಜಿಐಎಸ್ ಪರಿಹಾರ ಕೇಂದ್ರಗಳ ಮ್ಯಾಪ್</h2>
+                    <span class="panel-subtitle">GIS RELIEF SHELTERS MAP</span>
+                </div>
+
+                <!-- Leaflet Interactive Map Card -->
+                <div class="map-card">
+                    <div id="gis-map"></div>
+                </div>
+
+                <!-- Live Shelter Feeds -->
+                <div class="control-card shelter-list-card">
+                    <div class="shelter-list-header">
+                        <h3>ಸಕ್ರಿಯ ಪರಿಹಾರ ಶಿಬಿರಗಳು (Active Camps)</h3>
+                        <span class="live-blink"><span class="blink-dot"></span>LIVE</span>
+                    </div>
+                    <div class="shelter-list-container" id="shelter-feed">
+                        <!-- Populated by JS -->
+                        <div class="shelter-skeleton">ಲೋಡಿಂಗ್ ಆಗುತ್ತಿದೆ...</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <!-- Premium EOC Dashboard Footer -->
+        <footer class="app-footer-bar">
+            <span class="footer-left">ರಾಷ್ಟ್ರೀಯ ಮಾಹಿತಿ ಕೇಂದ್ರ ಮತ್ತು ರಾಜ್ಯ ವಿಪತ್ತು ನಿಯಂತ್ರಣ ಕೊಠಡಿಯ ಪ್ರಾಯೋಗಿಕ ವ್ಯವಸ್ಥೆ</span>
+            <span class="footer-right">Low Latency Speech-RAG Suite • 2026.05.21</span>
+        </footer>
+
+    <!-- Leaflet.js script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Core JS -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
