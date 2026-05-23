@@ -27,3 +27,20 @@ input.wav
 output.mp3
 *.wav
 *.mp3
+
+# Datasets and large files
+dataset/*.jsonl
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Caches
+.cache/
+
+# Node
+node_modules/
+
+# Local overrides
+.env.*
+local_settings.py
