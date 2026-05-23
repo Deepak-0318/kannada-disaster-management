@@ -1,124 +1,40 @@
-import os
 import asyncio
 import numpy as np
 import sounddevice as sd
 import soundfile as sf
-from dotenv import load_dotenv
-from faster_whisper import WhisperModel
-import google.generativeai as genai
 import edge_tts
-from chatbot import ask_bot
 
-# =========================
+from faster_whisper import WhisperModel
+from chatbot import ask_chatbot
+
+# =====================================
 # CONFIG
-# =========================
+# =====================================
+
 SAMPLE_RATE = 16000
-DURATION = 7   # instead of 5
+DURATION = 7
 
-# =========================
-# LOAD ENV
-# =========================
-load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-
-# =========================
+# =====================================
 # LOAD WHISPER MODEL
-# =========================
-whisper_model = WhisperModel("small", device="cpu", compute_type="int8")
-transliteration_model = genai.GenerativeModel("models/gemini-flash-latest")
+# =====================================
 
+print("Loading Whisper model...")
 
-def is_kannada(text):
-    for ch in text:
-        if "\u0C80" <= ch <= "\u0CFF":
-            return True
-    return False
+whisper_model = WhisperModel(
+    "small",
+    device="cpu",
+    compute_type="int8"
+)
 
+print("Voice Agent Ready!\n")
 
-def has_long_repetition(text, threshold=6):
-    count = 1
-    previous = ""
-
-    for ch in text:
-        if ch == previous and not ch.isspace():
-            count += 1
-            if count >= threshold:
-                return True
-        else:
-            count = 1
-            previous = ch
-
-    return False
-
-
-def is_valid_kannada_query(text):
-    """
-    Validate if the transcribed text is a valid Kannada query
-    """
-    cleaned = text.strip()
-    if not cleaned:
-        return False
-
-    # Check for excessive repetition (like "ಲಿಲಿಲಿಲಿ...")
-    if has_long_repetition(cleaned, threshold=4):
-        return False
-
-    # Count Kannada characters
-    kannada_chars = [ch for ch in cleaned if "\u0C80" <= ch <= "\u0CFF"]
-    alpha_chars = [ch for ch in cleaned if ch.isalpha()]
-    words = [word for word in cleaned.split() if word]
-    
-    # Need at least 2 words
-    if len(words) < 2:
-        return False
-
-    # Need at least 6 alphabetic characters
-    if len(alpha_chars) < 6:
-        return False
-
-    # If we have Kannada characters, they should be at least 35% of alphabetic chars
-    if kannada_chars:
-        if len(kannada_chars) < 4:
-            return False
-        if alpha_chars and (len(kannada_chars) / len(alpha_chars)) < 0.35:
-            return False
-    
-    # Check for common garbage patterns
-    garbage_patterns = ['ಲಿಲಿಲಿ', 'ಸಾರಿಲಿ', 'ನನನನ', 'ರರರರ']
-    for pattern in garbage_patterns:
-        if pattern in cleaned:
-            return False
-
-    return True
-
-
-def transliterate_to_kannada(text):
-    if not text or is_kannada(text):
-        return text
-
-    try:
-        prompt = f"""
-Convert the following spoken Kannada text into proper Kannada script.
-Return only the Kannada text, with no explanation.
-
-Text:
-{text}
-"""
-        response = transliteration_model.generate_content(prompt)
-        converted = response.text.strip()
-        if is_kannada(converted):
-            return converted
-    except Exception as e:
-        print("Transliteration fallback error:", e)
-
-    return text
-
-
-# =========================
+# =====================================
 # RECORD AUDIO
-# =========================
+# =====================================
+
 def record_audio():
-    print("\nSpeak now...")
+
+    print("\n🎤 Speak now...")
 
     audio = sd.rec(
         int(DURATION * SAMPLE_RATE),
@@ -126,117 +42,146 @@ def record_audio():
         channels=1,
         dtype="float32"
     )
+
     sd.wait()
 
+    # Normalize audio
     max_val = np.max(np.abs(audio))
+
     if max_val > 0:
         audio = audio / max_val
 
     audio = (audio * 32767).astype("int16")
-    sf.write("temp.wav", audio, SAMPLE_RATE)
 
-    return "temp.wav"
+    audio_path = "temp.wav"
 
+    sf.write(audio_path, audio, SAMPLE_RATE)
 
-# =========================
-# SPEECH TO TEXT (KAN)
-# =========================
+    return audio_path
+
+# =====================================
+# SPEECH TO TEXT
+# =====================================
+
 def speech_to_text(audio_file):
-    """
-    Transcribe audio to Kannada text with improved validation
-    """
+
     try:
+
         segments, info = whisper_model.transcribe(
             audio_file,
             language="kn",
             task="transcribe",
-            beam_size=3,  # Increased from 1 for better accuracy
-            best_of=3,    # Increased from 1
-            temperature=0.0,
-            condition_on_previous_text=False,
-            vad_filter=True,
-            vad_parameters=dict(min_silence_duration_ms=500)  # Better silence detection
+            beam_size=3,
+            vad_filter=True
         )
 
-        text = " ".join([seg.text for seg in segments]).strip()
-        print(f"DEBUG RAW TEXT: {text}")
+        text = " ".join(
+            [segment.text for segment in segments]
+        ).strip()
         
-        # Check if audio was too short or silent
-        if info.duration < 0.5:
-            print("⚠️ Audio too short, please speak longer")
-            return ""
+        # If Kannada script missing, try transliteration recovery
+        if not any("\u0C80" <= ch <= "\u0CFF" for ch in text):
 
-        # Validate the transcription
-        if not is_valid_kannada_query(text):
-            print("⚠️ Could not understand clearly, please try again")
-            return ""
+            transliteration_prompt = f"""
+        Convert this Kannada speech transliteration into proper Kannada script.
 
-        # Try transliteration if needed
-        text = transliterate_to_kannada(text)
+        Text:
+        {text}
 
-        print(f"🗣️ You: {text}")
+        Return ONLY Kannada text.
+        """
+
+        try:
+
+            recovered = ask_chatbot(transliteration_prompt)
+
+            if recovered:
+                text = recovered.strip()
+
+        except Exception:
+            pass
+
+        print(f"\n🗣️ You: {text}")
+
         return text
 
     except Exception as e:
+
         print(f"❌ STT Error: {e}")
+
         return ""
 
+# =====================================
+# TEXT TO SPEECH
+# =====================================
 
-# =========================
-# TEXT TO SPEECH (KAN)
-# =========================
 async def speak_async(text):
+
     try:
+
         communicate = edge_tts.Communicate(
             text,
             voice="kn-IN-SapnaNeural"
         )
 
-        await communicate.save("output.mp3")
+        await communicate.save("response.mp3")
 
-        data, samplerate = sf.read("output.mp3")
+        data, samplerate = sf.read("response.mp3")
+
         sd.play(data, samplerate)
+
         sd.wait()
 
     except Exception as e:
-        print("❌ TTS Error:", e)
 
+        print(f"❌ TTS Error: {e}")
 
 def speak(text):
+
     asyncio.run(speak_async(text))
 
-
-# =========================
+# =====================================
 # MAIN LOOP
-# =========================
+# =====================================
+
 def main():
-    print("\nKannada Voice Agent Ready!")
-    print("Press ENTER to speak | type 'exit' to quit\n")
+
+    print("Press ENTER to speak")
+    print("Type 'exit' to quit\n")
 
     while True:
-        user_input = input("Press ENTER... ")
+
+        user_input = input(">>> ")
 
         if user_input.lower() == "exit":
-            print("Exiting...")
             break
 
-        audio_file = record_audio()
-        query = speech_to_text(audio_file)
+        audio_path = record_audio()
+
+        query = speech_to_text(audio_path)
 
         if not query:
+            print("⚠️ Could not understand audio\n")
             continue
 
         try:
-            response = ask_bot(query)
+
+            response = ask_chatbot(query)
+
+            print("\n🤖 Assistant:\n")
+
+            print(response)
+
+            print("\n🔊 Speaking...\n")
+
+            speak(response)
+
         except Exception as e:
-            print("❌ LLM Error:", e)
-            continue
 
-        print("\nBot:\n", response)
-        print("Speaking...\n")
-        speak(response)
+            print(f"❌ Chatbot Error: {e}")
 
+# =====================================
 
-# =========================
 if __name__ == "__main__":
+
     main()

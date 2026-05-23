@@ -1,27 +1,11 @@
 Flask
 python-dotenv
 google-generativeai
-groq
 sentence-transformers
 faiss-cpu
 numpy
 sounddevice
 soundfile
-scipy
 faster-whisper
-pyttsx3
 edge-tts
-langdetect
 rank-bm25
-
-# # Create virtual environment (do this once)
-# #python3 -m venv venv
-
-# # Activate it
-# source venv/bin/activate
-
-# # Install packages
-# pip install -r requirements.txt
-
-# # Run the app
-# streamlit run app.py
